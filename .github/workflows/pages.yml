@@ -2,10 +2,10 @@
 # in the book project), so it is deployed as it is, with no build step.
 name: Deploy web app to Pages
 
+# Started by hand only (Actions -> Deploy web app to Pages -> Run workflow),
+# so the books go on the open web only when that is decided. To publish on
+# every push instead, add:  push: { branches: ["main"], paths: ["web/**"] }
 on:
-  push:
-    branches: ["main"]
-    paths: ["web/**"]
   workflow_dispatch:
 
 permissions:

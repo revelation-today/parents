@@ -57,5 +57,5 @@ and uploads it.
 
 ## The web version
 
-GitHub Pages must be switched on once: *Settings → Pages → Source: GitHub Actions*.
+GitHub Pages must be switched on once (*Settings → Pages → Source: GitHub Actions*), and the deploy workflow is started by hand: *Actions → Deploy web app to Pages → Run workflow*.
 On iPhone, Safari shows a small hint to add the app to the home screen; after that it opens full-screen and works offline.
