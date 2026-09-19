@@ -50,6 +50,7 @@ and uploads it.
 **For the App Store listing**
 
 - Privacy policy URL: `https://revelation-today.github.io/parents/privacy.html` (or the custom domain, once set).
+- Support and privacy contact: revelation-today@web.de
 - App Privacy: *Data Not Collected* — progress is stored only on the device.
 - Category: Books (or Reference).
 - Scripture quotations marked NIV: the notice required by Biblica is in the app under *About → Translations*.
