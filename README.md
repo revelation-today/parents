@@ -8,7 +8,7 @@ Two thirty-one-day devotionals on the fathers and mothers of the Bible — *Like
 | `resources/` | The app icon and splash screens the iOS build is made from. |
 | `.github/workflows/pages.yml` | Publishes `web/` to GitHub Pages on every push that changes it. |
 | `.github/workflows/ios.yml` | Builds the iPhone app on a Mac runner and uploads it to TestFlight. Run by hand. |
-| `capacitor.config.json` | App ID `net.revelationtoday.parents`, home-screen name "Parents". |
+| `capacitor.config.json` | App ID `net.revelationtoday.parent`, name "Faithful parents" (App Store Connect Apple ID 6813810391). |
 
 ## Where the text comes from
 
@@ -32,9 +32,9 @@ and uploads it.
 
 1. *Users and Access → Integrations → App Store Connect API*: create a key with the **Admin** role.
    Download the `.p8` file (possible only once) and note the Key ID and the Issuer ID.
-2. *Apps → + → New App*: platform iOS, name **Like a Father, As a Mother**, bundle ID
-   `net.revelationtoday.parents` (if it is not offered yet, register it under
-   *Certificates, Identifiers & Profiles → Identifiers* first), SKU e.g. `parents-1`.
+2. *Apps → + → New App*: platform iOS, name **Faithful parents**, bundle ID
+   `net.revelationtoday.parent` (if it is not offered yet, register it under
+   *Certificates, Identifiers & Profiles → Identifiers* first), SKU `faithful-parents` (done).
 3. In this repository, *Settings → Secrets and variables → Actions*, add:
    `APPLE_TEAM_ID`, `APPSTORE_KEY_ID`, `APPSTORE_ISSUER_ID`, and `APPSTORE_KEY_P8`
    (the whole text of the `.p8` file).

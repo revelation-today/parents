@@ -1,10 +1,9 @@
 {
-  "appId": "net.revelationtoday.parents",
-  "appName": "Parents",
+  "appId": "net.revelationtoday.parent",
+  "appName": "Faithful parents",
   "webDir": "web",
   "ios": {
     "contentInset": "never",
-    "backgroundColor": "#F4F6F2",
-    "scheme": "Parents"
+    "backgroundColor": "#F4F6F2"
   }
 }

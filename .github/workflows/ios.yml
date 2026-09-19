@@ -47,8 +47,8 @@ jobs:
           # No encryption beyond the system's own: skips the export-compliance question.
           /usr/libexec/PlistBuddy -c "Add :ITSAppUsesNonExemptEncryption bool false" "$PLIST" \
             || /usr/libexec/PlistBuddy -c "Set :ITSAppUsesNonExemptEncryption false" "$PLIST"
-          /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName Parents" "$PLIST" \
-            || /usr/libexec/PlistBuddy -c "Add :CFBundleDisplayName string Parents" "$PLIST"
+          /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName Faithful parents" "$PLIST" \
+            || /usr/libexec/PlistBuddy -c "Add :CFBundleDisplayName string Faithful parents" "$PLIST"
 
       - name: App Store Connect API key
         env:
