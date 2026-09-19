@@ -1,0 +1,17 @@
+{
+  "name": "like-a-father-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Like a Father, As a Mother: two Bible devotionals with reading plans, for iPhone and the web.",
+  "scripts": {
+    "sync": "cap sync ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/ios": "^8.5.2"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.2"
+  }
+}

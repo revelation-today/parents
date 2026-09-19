@@ -1,0 +1,10 @@
+{
+  "appId": "net.revelationtoday.parents",
+  "appName": "Parents",
+  "webDir": "web",
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#F4F6F2",
+    "scheme": "Parents"
+  }
+}

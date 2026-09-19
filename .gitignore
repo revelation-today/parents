@@ -1,0 +1,6 @@
+node_modules/
+ios/
+*.p8
+.DS_Store
+resources/*.ttf
+NUL
