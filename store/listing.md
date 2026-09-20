@@ -1,20 +1,76 @@
-# App Store listing — Faithful parents
+# App Store-Eintrag — Faithful parents
 
-Copy each block into App Store Connect. Character limits in brackets.
+Die Felder heißen hier wie in App Store Connect (deutsche Oberfläche); der Text selbst
+bleibt Englisch, weil die Primärsprache der App Englisch (UK) ist.
+Zeichengrenzen in eckigen Klammern.
 
-## Name [30]
+---
+
+# App-Informationen
+
+## Übersetzbare Informationen
+
+### Name [30] — *eingetragen*
 
     Faithful parents
 
-## Subtitle [30]
+### Untertitel [30] — *eingetragen*
 
     Devotional for parents
 
-## Promotional text [170]
+## Allgemeine Informationen — *eingetragen*
+
+    Bundle-ID:     net.revelationtoday.parent
+    SKU:           faithful-parents
+    Apple-ID:      6813810391
+    Primärsprache: Englisch (UK)
+    Kategorie:     Bücher · Lifestyle
+
+### Inhaltsrechte → „Informationen zu den Inhaltsrechten einrichten"
+
+Die App enthält Inhalte Dritter: Bibelzitate aus der New International Version
+(Anglicised). Antwort:
+
+    Ja — die App enthält, zeigt oder greift auf Inhalte Dritter zu,
+    und ich habe die Rechte, diese Inhalte zu verwenden.
+
+Begründung (falls nachgefragt): Die Zitate liegen innerhalb der Standardgenehmigung
+von Biblica (weniger als 500 Verse, unter 25 % des Werks); der vorgeschriebene
+Copyright-Hinweis steht in der App unter *About → Translations* und unten in der
+Beschreibung.
+
+## Altersfreigaben → „Altersfreigaben einrichten"
+
+Alle Fragen mit **Keine / Nie** beantworten; Ergebnis: **4+**.
+Hinweis zu einzelnen Kategorien:
+
+    In-App-Steuerelemente:   Uneingeschränkter Internetzugriff = Nein
+                             (nur ein optionaler Link zu BibleGateway.com)
+    Erwachsenenthemen:       Keine
+    Sexualität/Nacktheit:    Keine
+    Gewalt:                  Keine
+    Medizin oder Wellness:   Keine
+    Zufallsbasierte Akt.:    Keine
+    Benutzergenerierte Inhalte / Soziale Medien: Nein
+
+Die Bücher sprechen über Trauer und familiäre Verletzungen — seelsorglich, ohne
+Darstellung von Gewalt.
+
+## Dokumentation zur App-Verschlüsselung
+
+Nichts hochzuladen. Der Build setzt bereits `ITSAppUsesNonExemptEncryption = false`
+in der Info.plist (die App nutzt nur die Verschlüsselung des Betriebssystems, z. B.
+HTTPS beim optionalen Link).
+
+---
+
+# Version 1.0 (Vertrieb → iOS-App → 1.0)
+
+## Werbetext [170]
 
     Two thirty-one-day devotionals on the fathers and mothers of the Bible — with reading plans, the Hebrew behind each day, and notes that show their sources.
 
-## Description [4000]
+## Beschreibung [4000]
 
     Two thirty-one-day devotionals in one app: Like a Father, on the fathers of the Bible, and As a Mother Comforts, on its mothers. Read one, read the other, or read them side by side.
 
@@ -55,43 +111,51 @@ Copy each block into App Store Connect. Character limits in brackets.
 
     Scripture quotations marked NIV are taken from the Holy Bible, New International Version (Anglicised edition). Copyright © 1979, 1984, 2011 by Biblica. Used by permission of Hodder & Stoughton Ltd, an Hachette UK company. All rights reserved. 'NIV' is a registered trademark of Biblica. UK trademark number 1448790.
 
-## Keywords [100, comma-separated, no spaces]
+## Schlüsselbegriffe [100, mit Komma getrennt, ohne Leerzeichen]
 
     devotional,bible,fathers,mothers,parents,reading plan,christian,daily,prayer,family,hebrew,faith
 
-## Support URL
+## Support-URL
 
     https://revelation-today.github.io/parents/
 
-## Marketing URL (optional)
+## Marketing-URL (optional)
 
     https://revelation-today.github.io/parents/
 
-## Privacy policy URL
+## Neue Funktionen in dieser Version
+
+    First release.
+
+## App-Vorschauen und Screenshots
+
+    6,9 Zoll (1320 × 2868):  store/screenshots/6.9/
+    6,5 Zoll (1242 × 2688):  store/screenshots/6.5/
+
+    01-today     Today, mit zwei laufenden Leseplänen
+    02-reading   ein Tag mit hebräischem Wort des Tages
+    03-plans     die sieben Lesepläne
+    04-library   die Bibliothek (As a Mother Comforts)
+    05-dark      ein Tag im Dunkelmodus
+
+---
+
+# App-Datenschutz (Vertrauen und Sicherheit → App-Datenschutz)
+
+## Datenschutzrichtlinie-URL
 
     https://revelation-today.github.io/parents/privacy.html
 
-## Category
+## Datenerfassung
 
-    Primary: Books · Secondary: Lifestyle
+    „Es werden keine Daten von dieser App erfasst."
 
-## Age rating
+    Keine Accounts, keine Analyse, keine Werbung, kein Tracking.
+    Lesefortschritt und Einstellungen bleiben auf dem Gerät.
 
-    4+ — no objectionable content. The books discuss family harm and grief in a pastoral way, with no graphic description.
+---
 
-## App Privacy
-
-    Data Not Collected. No accounts, no analytics, no advertising, no tracking.
-    Reading progress and settings are stored only on the device.
-
-## Content rights
-
-    Contains third-party content used under licence: Scripture quotations from the
-    New International Version (Anglicised), quoted within Biblica's standing permission
-    (fewer than 500 verses, under 25% of the work), with the required notice shown in
-    the app under About → Translations.
-
-## Notes for the reviewer
+# Hinweise für die App-Prüfung (App-Prüfungsinformationen → Anmerkungen)
 
     This is a self-contained reading app, not a wrapper around a website.
 
@@ -103,6 +167,11 @@ Copy each block into App Store Connect. Character limits in brackets.
       passage on BibleGateway.com in the browser, for readers who want the full chapter.
     • To see the plans in action: Plans → Side by Side → Start, then Today.
 
-## Version 1.0 — What's New
+    No sign-in is required, so no demo account is needed.
 
-    First release.
+---
+
+# Preisgestaltung und Verfügbarkeit
+
+    Preis:          Kostenlos
+    Verfügbarkeit:  alle Länder und Regionen (oder nach Wunsch einschränken)
