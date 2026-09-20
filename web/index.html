@@ -96,6 +96,7 @@ button{font:inherit;color:inherit}
 .tick{height:18px;border-radius:3px;background:var(--sunk)}
 .tick.done{background:var(--ink);opacity:.82}
 .tick.next{background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink)}
+.tick.half{background:linear-gradient(to top, color-mix(in srgb,var(--ink) 82%,transparent) 50%, var(--sunk) 50%)}
 .tick.due{background:var(--line)}
 
 .readings{display:flex;flex-direction:column;margin-top:12px;border-top:1px solid var(--line)}
@@ -103,6 +104,8 @@ button{font:inherit;color:inherit}
 .reading:last-child{border-bottom:0;padding-bottom:0}
 .dot{width:10px;height:10px;border-radius:50%;background:var(--accent)}
 .reading .t{font:500 16px/1.25 var(--text)}
+.reading.is-read .t,.reading.is-read .s{opacity:.55}
+.badge{font:600 10px/1 var(--ui);letter-spacing:.08em;text-transform:uppercase;font-style:normal;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:3px 6px;vertical-align:2px;margin-left:6px}
 .reading .s{color:var(--muted);font-size:12.5px;margin-top:2px}
 .chev{color:var(--faint);font-size:18px}
 .check{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;color:var(--on-accent)}
@@ -323,12 +326,15 @@ const hhmm = r => `${String(r.hour).padStart(2,"0")}:${String(r.minute).padStart
 /* ---------- plan maths ---------- */
 function planInfo(plan, st){
   const n = plan.days.length;
-  const done = plan.days.map(rs => rs.every(isRead));
+  const readCount = plan.days.map(rs => rs.filter(isRead).length);
+  const done = plan.days.map((rs, i) => readCount[i] === rs.length);
   const next = done.indexOf(false);
   const sched = Math.min(n, Math.max(1, dayNum(todayStr()) - dayNum(st.start) + 1));
   let behind = 0; for (let i = 0; i < sched; i++) if (!done[i]) behind++;
   behind = Math.max(0, behind - 1);             // today's own reading is not "behind"
-  return {n, done, next, sched, behind, count: done.filter(Boolean).length};
+  const perDay = plan.days[0].length;
+  const left = next < 0 ? [] : plan.days[next].filter(r => !isRead(r));
+  return {n, done, readCount, next, sched, behind, perDay, left, count: done.filter(Boolean).length};
 }
 function readHref(id, planId, idx){ return "#/read/" + id + (planId ? `?plan=${planId}&d=${idx}` : ""); }
 
@@ -346,16 +352,20 @@ function tabs(active){
   document.getElementById("tabs").innerHTML = t.map(([k,l]) =>
     `<a class="tab" href="#/${k}" ${active===k?'aria-current="page"':''}>${ICON[k]}<span>${l}</span></a>`).join("");
 }
-function readingRow(id, planId, idx){
-  const d = DAY[id];
-  return `<a class="reading" data-book="${d.book}" href="${readHref(id,planId,idx)}">
+function readingRow(id, planId, idx, badge){
+  const d = DAY[id], read = isRead(id);
+  return `<a class="reading${read ? " is-read" : ""}" data-book="${d.book}" href="${readHref(id,planId,idx)}">
     <span class="dot" aria-hidden="true"></span>
-    <span><div class="t">${esc(d.title)}</div><div class="s">${esc(bookName(d.book))} · Day ${d.n}${d.read?" · "+esc(d.read):""}</div></span>
-    ${isRead(id) ? `<span class="check on" data-book="${d.book}" aria-label="Read">${ICON.tick}</span>` : `<span class="chev" aria-hidden="true">›</span>`}
+    <span><div class="t">${esc(d.title)}${badge && !read ? ' <em class="badge">next</em>' : ""}</div>
+      <div class="s">${esc(bookName(d.book))} · Day ${d.n}${d.read?" · "+esc(d.read):""}</div></span>
+    ${read ? `<span class="check on" data-book="${d.book}" aria-label="Read">${ICON.tick}</span>` : `<span class="chev" aria-hidden="true">›</span>`}
   </a>`;
 }
 function ticks(info){
-  return `<div class="ticks" aria-hidden="true">${info.done.map((d,i)=>`<span class="tick ${d?"done":i===info.next?"next":i<info.sched?"due":""}"></span>`).join("")}</div>`;
+  return `<div class="ticks" aria-hidden="true">${info.done.map((d,i)=>{
+    const half = !d && info.readCount[i] > 0;
+    return `<span class="tick ${d?"done":half?"half":i===info.next?"next":i<info.sched?"due":""}"></span>`;
+  }).join("")}</div>`;
 }
 function toast(msg){
   const t = document.getElementById("toast"); t.textContent = msg; t.hidden = false;
@@ -386,10 +396,11 @@ function screenToday(){
     h += `<section class="card plan-card">
       <div class="meta-row" style="justify-content:space-between;margin:0"><span class="eyebrow">Started ${esc(fmtDate(st.start))}</span>${status}</div>
       <h2 class="plan-name">${esc(plan.name)}</h2>
-      <div class="meta-row"><span>${complete ? `All ${info.n} days read` : `Day ${info.next+1} of ${info.n}`}</span><span>${info.count} done</span></div>
+      <div class="meta-row"><span>${complete ? `All ${info.n} days read` : `Day ${info.next+1} of ${info.n}`}</span><span>${info.count} done</span>${
+        !complete && info.perDay > 1 ? `<span>${info.perDay - info.left.length} of ${info.perDay} read today</span>` : ""}</div>
       ${ticks(info)}
       ${complete ? `<div class="btn-row"><button class="btn quiet" data-restart="${plan.id}">Read it again</button><button class="linkbtn" data-stop="${plan.id}">Remove from Today</button></div>`
-        : `<div class="readings">${plan.days[info.next].map(id=>readingRow(id,plan.id,info.next)).join("")}</div>`}
+        : `<div class="readings">${plan.days[info.next].map(id=>readingRow(id,plan.id,info.next,info.left.length < info.perDay)).join("")}</div>`}
     </section>`;
   }
   if (S.last && DAY[S.last]){
@@ -462,16 +473,27 @@ function screenRead(id, q){
   const d = DAY[id]; if (!d) return screenToday();
   const b = DATA.books[d.book];
   const part = b.parts[d.part];
-  const planId = q.get("plan"), idx = Number(q.get("d"));
-  const plan = planId && PLAN[planId];
+  let planId = q.get("plan"), idx = Number(q.get("d"));
+  let plan = planId && PLAN[planId];
+  // Opened from the library or a link? If this reading is where one of your
+  // plans stands right now, carry on inside that plan anyway.
+  if (!plan){
+    for (const {plan: p, st} of activePlans()){
+      const info = planInfo(p, st);
+      if (info.next >= 0 && p.days[info.next].indexOf(id) !== -1){ plan = p; planId = p.id; idx = info.next; break; }
+    }
+  }
   const read = isRead(id);
   const prev = DAY[d.book + (d.n - 1)], next = DAY[d.book + (d.n + 1)];
   // what comes next in the plan: the other reading of the same plan day, else the next plan day
-  let planNext = null;
+  let planNext = null, dayDone = false;
   if (plan && plan.days[idx]){
     const others = plan.days[idx].filter(r => r !== id && !isRead(r));
     if (others.length) planNext = {id: others[0], idx};
-    else if (plan.days[idx+1]) planNext = {id: plan.days[idx+1][0], idx: idx+1};
+    else {
+      dayDone = plan.days[idx].every(isRead);
+      if (plan.days[idx+1]) planNext = {id: plan.days[idx+1][0], idx: idx+1};
+    }
   }
   const gw = "https://www.biblegateway.com/passage/?version=NIVUK&search=" + encodeURIComponent(d.read);
   return `<div class="readbar" data-book="${d.book}">
@@ -487,7 +509,9 @@ function screenRead(id, q){
       ${d.note ? `<details class="notes"><summary>Notes and sources</summary><p>${d.note}</p></details>` : ""}
       <div class="done-panel">
         <button class="btn ${read?"quiet":"accent"} block" data-toggle="${id}">${read ? "Read ✓ — tap to undo" : "Mark as read"}</button>
-        ${planNext ? `<a class="btn quiet block" href="${readHref(planNext.id, planId, planNext.idx)}">Next in plan: ${esc(DAY[planNext.id].title)}</a>` : ""}
+        ${planNext ? `<a class="btn ${dayDone ? "quiet" : "accent"} block" href="${readHref(planNext.id, planId, planNext.idx)}">${
+            dayDone ? `Day ${idx+1} complete · start Day ${planNext.idx+1}` : `Next in plan: ${esc(DAY[planNext.id].title)}`}</a>` : ""}
+        ${dayDone && !plan.days[idx+1] ? `<p class="fine" style="text-align:center;margin:0">That was the last day of ${esc(plan.name)}.</p>` : ""}
         <nav class="pager" aria-label="Previous and next day">
           ${prev ? `<a href="#/read/${prev.id}"><small>‹ Day ${prev.n}</small><span>${esc(prev.title)}</span></a>` : "<span></span>"}
           ${next ? `<a class="next" href="#/read/${next.id}"><small>Day ${next.n} ›</small><span>${esc(next.title)}</span></a>` : "<span></span>"}
