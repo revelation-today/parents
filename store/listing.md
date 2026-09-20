@@ -1,22 +1,15 @@
 # App Store-Eintrag — Faithful parents
 
-Die Felder heißen hier wie in App Store Connect (deutsche Oberfläche); der Text selbst
-bleibt Englisch, weil die Primärsprache der App Englisch (UK) ist.
+Die Feldnamen stehen so, wie App Store Connect sie auf Deutsch zeigt.
 Zeichengrenzen in eckigen Klammern.
+
+Die App selbst ist **auf Englisch**. Die Primärsprache des Eintrags ist
+Englisch (UK); der deutsche Eintrag (unten) macht die App in der deutschen
+Suche auffindbar und sagt im ersten Satz, dass die Texte englisch sind.
 
 ---
 
-# App-Informationen
-
-## Übersetzbare Informationen
-
-### Name [30] — *eingetragen*
-
-    Faithful parents
-
-### Untertitel [30] — *eingetragen*
-
-    Devotional for parents
+# Teil 1 — Felder ohne Sprache
 
 ## Allgemeine Informationen — *eingetragen*
 
@@ -26,7 +19,7 @@ Zeichengrenzen in eckigen Klammern.
     Primärsprache: Englisch (UK)
     Kategorie:     Bücher · Lifestyle
 
-### Inhaltsrechte → „Informationen zu den Inhaltsrechten einrichten"
+## Inhaltsrechte → „Informationen zu den Inhaltsrechten einrichten"
 
 Die App enthält Inhalte Dritter: Bibelzitate aus der New International Version
 (Anglicised). Antwort:
@@ -38,6 +31,10 @@ Begründung (falls nachgefragt): Die Zitate liegen innerhalb der Standardgenehmi
 von Biblica (weniger als 500 Verse, unter 25 % des Werks); der vorgeschriebene
 Copyright-Hinweis steht in der App unter *About → Translations* und unten in der
 Beschreibung.
+
+## Copyright
+
+    2026 Hagen Schilder
 
 ## Altersfreigaben → „Altersfreigaben einrichten"
 
@@ -76,9 +73,64 @@ Nichts hochzuladen. Der Build setzt bereits `ITSAppUsesNonExemptEncryption = fal
 in der Info.plist (die App nutzt nur die Verschlüsselung des Betriebssystems, z. B.
 HTTPS beim optionalen Link).
 
+## App-Datenschutz (Vertrauen und Sicherheit → App-Datenschutz)
+
+    Datenschutzrichtlinie-URL: https://revelation-today.github.io/parents/privacy.html
+    Datenerfassung:            „Es werden keine Daten von dieser App erfasst."
+
+    Keine Accounts, keine Analyse, keine Werbung, kein Tracking.
+    Lesefortschritt und Einstellungen bleiben auf dem Gerät.
+
+## Hinweise für die App-Prüfung (App-Prüfungsinformationen → Anmerkungen)
+
+„Anmeldung erforderlich" bleibt **aus** — die App hat keinen Login.
+
+    This is a self-contained reading app, not a wrapper around a website.
+
+    • All content — two complete 31-day devotionals, 62 readings — is bundled in the app.
+      It works with the device in airplane mode; please feel free to test it that way.
+    • The app has no accounts and no server. Reading plans, progress, marked days and
+      text size are stored on the device.
+    • The only outbound link is optional: on each day, "Read <passage>" opens that Bible
+      passage on BibleGateway.com in the browser, for readers who want the full chapter.
+    • To see the plans in action: Plans → Side by Side → Start, then Today.
+
+    No sign-in is required, so no demo account is needed.
+
+## Preisgestaltung und Verfügbarkeit
+
+    Preis:          Kostenlos
+    Verfügbarkeit:  alle Länder und Regionen (oder nach Wunsch einschränken)
+
+## App-Vorschauen und Screenshots
+
+    iPhone 6,9 Zoll (1320 × 2868):  store/screenshots/6.9/
+    iPhone 6,5 Zoll (1242 × 2688):  store/screenshots/6.5/
+    iPad 13 Zoll  (2064 × 2752):    store/screenshots/ipad-13/
+
+    Die App läuft auch auf dem iPad (Capacitor baut universal), deshalb verlangt
+    App Store Connect auch iPad-Screenshots.
+
+    01-today     Today, mit zwei laufenden Leseplänen
+    02-reading   ein Tag mit hebräischem Wort des Tages
+    03-plans     die sieben Lesepläne
+    04-library   die Bibliothek (As a Mother Comforts)
+    05-dark      ein Tag im Dunkelmodus
+
+    Die Screenshots zeigen die englische App und gelten für beide Sprachen.
+    Lässt man sie bei einer Sprache leer, zeigt der Store die der Primärsprache.
+
 ---
 
-# Version 1.0 (Vertrieb → iOS-App → 1.0)
+# Teil 2 — Englisch (UK), die Primärsprache
+
+## Name [30]
+
+    Faithful parents
+
+## Untertitel [30]
+
+    Devotional for parents
 
 ## Werbetext [170]
 
@@ -141,55 +193,118 @@ HTTPS beim optionalen Link).
 
     First release.
 
-## App-Vorschauen und Screenshots
+---
 
-    iPhone 6,9 Zoll (1320 × 2868):  store/screenshots/6.9/
-    iPhone 6,5 Zoll (1242 × 2688):  store/screenshots/6.5/
-    iPad 13 Zoll  (2064 × 2752):    store/screenshots/ipad-13/
+# Teil 3 — Deutsch
 
-    Die App läuft auch auf dem iPad (Capacitor baut universal), deshalb verlangt
-    App Store Connect auch iPad-Screenshots.
+Der Name bleibt englisch: er ist der Name der App, und die App ist englisch.
+Untertitel und der erste Satz der Beschreibung sagen das ausdrücklich, damit
+niemand eine deutsche Andacht erwartet.
 
-    01-today     Today, mit zwei laufenden Leseplänen
-    02-reading   ein Tag mit hebräischem Wort des Tages
-    03-plans     die sieben Lesepläne
-    04-library   die Bibliothek (As a Mother Comforts)
-    05-dark      ein Tag im Dunkelmodus
+## Name [30]
+
+    Faithful parents
+
+## Untertitel [30]
+
+    Andacht für Eltern (englisch)
+
+## Werbetext [170]
+
+    Zwei Andachtsbücher über die Väter und Mütter der Bibel, je 31 Tage, mit Leseplänen, dem hebräischen Wort des Tages und Quellen. Die Texte der App sind auf Englisch.
+
+## Beschreibung [4000]
+
+    Hinweis: Alle Texte dieser App sind auf Englisch.
+
+    Zwei Andachtsbücher mit je 31 Tagen in einer App: Like a Father über die Väter der Bibel und As a Mother Comforts über ihre Mütter. Lies das eine, lies das andere, oder lies beide nebeneinander.
+
+    Die Eltern der Bibel sind keine Heldengalerie. Abraham hebt das Messer über seinen Sohn. Eli weist seine Söhne nicht zurecht. David weint zu spät. Sara treibt eine Sklavin in die Wüste; Rebekka täuscht ihren Mann; Rahel und Lea führen ihren Streit über die Namen ihrer Kinder. Daneben stehen Hanna, die betete; Rizpa, die ihre toten Söhne monatelang bewachte; Jochebed, die ein kleines Kästlein baute; Hiob, der für Kinder betete, die er nicht in der Hand hatte; Manoach, der nachfragte; und der Vater aus Lukas 15, der lief.
+
+    Jeder Tag enthält:
+
+    • eine kurze Bibellese und einen Schlüsselvers
+    • ein Wort aus dem Hebräischen oder Griechischen und was es bedeutet
+    • eine Seite über einen Vater oder eine Mutter, in klarer Sprache
+    • zwei Fragen zum Nachdenken
+    • ein Gebet und eine Sache für heute
+    • Anmerkungen und Quellen, wenn du den Boden unter einem Tag prüfen willst
+
+    SIEBEN LESEPLÄNE
+
+    • Side by Side — beide Bücher zusammen, 31 Tage
+    • Like a Father — 31 Tage
+    • As a Mother Comforts — 31 Tage
+    • Teaching Your Children — 8 Tage
+    • When Parents Get It Wrong — 8 Tage
+    • Grief and Loss — 7 Tage
+    • If a Parent Hurt You — 7 Tage
+
+    Kein Plan läuft dir davon. Verpasst du eine Woche, wartet er da, wo du aufgehört hast.
+
+    EHRLICH BEI DEN SCHWEREN STELLEN
+
+    Diese Bücher lassen die schwierigen Texte nicht aus: die Rute in den Sprüchen, die Töchter, die Väter, die Schaden angerichtet haben, und die Leser, denen die eigenen Eltern wehgetan haben. Wo die Fachleute uneins sind, sagen es die Anmerkungen.
+
+    ZUM LESEN GEBAUT
+
+    • Funktioniert vollständig offline. Keine Anmeldung, kein Konto, keine Werbung.
+    • Dein Lesefortschritt bleibt auf deinem Gerät.
+    • Hell und dunkel, und Text, den du größer stellen kannst.
+
+    Beide Andachtsbücher stehen auf zwei längeren Studien zum biblischen Material, und die Anmerkungen verweisen auf die Forschung hinter einzelnen Tagen.
+
+    Scripture quotations marked NIV are taken from the Holy Bible, New International Version (Anglicised edition). Copyright © 1979, 1984, 2011 by Biblica. Used by permission of Hodder & Stoughton Ltd, an Hachette UK company. All rights reserved. 'NIV' is a registered trademark of Biblica. UK trademark number 1448790.
+
+## Schlüsselbegriffe [100, mit Komma getrennt, ohne Leerzeichen]
+
+    andacht,bibel,väter,mütter,eltern,leseplan,christlich,gebet,familie,glaube,vaterschaft,hebräisch
+
+Der Name der App („Faithful parents") und der Untertitel werden von der Suche
+ohnehin erfasst — sie gehören nicht in die Schlüsselbegriffe.
+
+## Support-URL
+
+    https://revelation-today.github.io/parents/
+
+## Marketing-URL (optional)
+
+    https://revelation-today.github.io/parents/
+
+## Neue Funktionen in dieser Version
+
+    Erste Version.
 
 ---
 
-# App-Datenschutz (Vertrauen und Sicherheit → App-Datenschutz)
+# Teil 4 — Eine Sprache in App Store Connect hinzufügen
 
-## Datenschutzrichtlinie-URL
+Sprachen hängen an zwei Stellen, und beide müssen gefüllt werden:
 
-    https://revelation-today.github.io/parents/privacy.html
+1. **App-Informationen** (gilt für alle Versionen): Name, Untertitel,
+   Datenschutzrichtlinie-URL.
+2. **Die Version** (hier 1.0): Werbetext, Beschreibung, Schlüsselbegriffe,
+   Support-URL, Marketing-URL, Neue Funktionen, Screenshots.
 
-## Datenerfassung
+**So geht es:**
 
-    „Es werden keine Daten von dieser App erfasst."
+1. App Store Connect → *Apps* → **Faithful parents**.
+2. Links *Vertrieb* („Distribution") wählen, dann in der Seitenleiste
+   **App-Informationen** oder die Version **1.0 Bereit zur Einreichung**.
+3. Oben rechts auf der Seite steht ein Sprachmenü (z. B. „Englisch (UK)").
+   Aufklappen → **Sprache hinzufügen** → *Deutsch* → hinzufügen.
+4. Die Seite zeigt jetzt die leeren deutschen Felder. Text aus Teil 3 einsetzen.
+5. Screenshots: entweder dieselben hochladen oder leer lassen — leer bedeutet,
+   dass der Store die der Primärsprache zeigt.
+6. **Sichern** (oben rechts). Jede Sprache wird einzeln gesichert.
 
-    Keine Accounts, keine Analyse, keine Werbung, kein Tracking.
-    Lesefortschritt und Einstellungen bleiben auf dem Gerät.
+**Was dabei zu wissen ist:**
 
----
-
-# Hinweise für die App-Prüfung (App-Prüfungsinformationen → Anmerkungen)
-
-    This is a self-contained reading app, not a wrapper around a website.
-
-    • All content — two complete 31-day devotionals, 62 readings — is bundled in the app.
-      It works with the device in airplane mode; please feel free to test it that way.
-    • The app has no accounts and no server. Reading plans, progress, marked days and
-      text size are stored on the device.
-    • The only outbound link is optional: on each day, "Read <passage>" opens that Bible
-      passage on BibleGateway.com in the browser, for readers who want the full chapter.
-    • To see the plans in action: Plans → Side by Side → Start, then Today.
-
-    No sign-in is required, so no demo account is needed.
-
----
-
-# Preisgestaltung und Verfügbarkeit
-
-    Preis:          Kostenlos
-    Verfügbarkeit:  alle Länder und Regionen (oder nach Wunsch einschränken)
+- Der deutsche Eintrag erscheint für alle, deren App Store auf Deutsch steht,
+  nicht nur in Deutschland — auch Österreich und die Schweiz.
+- Die Schlüsselbegriffe sind pro Sprache getrennt. Ohne deutsche
+  Schlüsselbegriffe findet niemand die App mit „Andacht" oder „Leseplan".
+- Eine Sprache lässt sich vor der Einreichung wieder entfernen (im selben Menü);
+  ist die Version veröffentlicht, geht das erst mit der nächsten Version.
+- Weitere Sprachen später (z. B. Indonesisch, Türkisch) laufen genauso. Sinnvoll
+  ist das erst, wenn die Texte der App selbst in der Sprache vorliegen.
