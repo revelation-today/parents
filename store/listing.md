@@ -143,8 +143,12 @@ HTTPS beim optionalen Link).
 
 ## App-Vorschauen und Screenshots
 
-    6,9 Zoll (1320 × 2868):  store/screenshots/6.9/
-    6,5 Zoll (1242 × 2688):  store/screenshots/6.5/
+    iPhone 6,9 Zoll (1320 × 2868):  store/screenshots/6.9/
+    iPhone 6,5 Zoll (1242 × 2688):  store/screenshots/6.5/
+    iPad 13 Zoll  (2064 × 2752):    store/screenshots/ipad-13/
+
+    Die App läuft auch auf dem iPad (Capacitor baut universal), deshalb verlangt
+    App Store Connect auch iPad-Screenshots.
 
     01-today     Today, mit zwei laufenden Leseplänen
     02-reading   ein Tag mit hebräischem Wort des Tages
