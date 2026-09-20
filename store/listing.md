@@ -41,20 +41,34 @@ Beschreibung.
 
 ## Altersfreigaben → „Altersfreigaben einrichten"
 
-Alle Fragen mit **Keine / Nie** beantworten; Ergebnis: **4+**.
-Hinweis zu einzelnen Kategorien:
+**Ergebnis: 16+** (Stand 1.0). Die Bücher *erwähnen* Gewalt in biblischen
+Erzählungen — die Vergewaltigung Tamars (Tag 24), Hinrichtungen, Kinderopfer,
+und die „Rute"-Sprüche der Sprüche Salomos (Tag 27) — und sie sprechen Leser an,
+die als Kind geschlagen oder verletzt wurden (Tag 30). Nichts davon wird
+dargestellt oder ausgemalt; es wird benannt und seelsorglich eingeordnet.
+16+ ist damit eine ehrliche Einstufung, und sie sollte bei künftigen Versionen
+gleich beantwortet werden.
+
+Für die Zielgruppe — Eltern — ist die Einstufung praktisch ohne Nachteil: sie
+verhindert weder Verkauf noch Prüfung, sondern erscheint nur als Badge und in
+Familienfiltern.
+
+Antworten, die gleich bleiben:
 
     In-App-Steuerelemente:   Uneingeschränkter Internetzugriff = Nein
                              (nur ein optionaler Link zu BibleGateway.com)
-    Erwachsenenthemen:       Keine
-    Sexualität/Nacktheit:    Keine
-    Gewalt:                  Keine
+    Benutzergenerierte Inhalte / Soziale Medien: Nein
+    Sexualität/Nacktheit:    Keine (keine Darstellung; Tag 24 nennt eine
+                             Vergewaltigung, ohne sie zu schildern)
     Medizin oder Wellness:   Keine
     Zufallsbasierte Akt.:    Keine
-    Benutzergenerierte Inhalte / Soziale Medien: Nein
+    Glücksspiel:             Nein
 
-Die Bücher sprechen über Trauer und familiäre Verletzungen — seelsorglich, ohne
-Darstellung von Gewalt.
+Falls die Einstufung einmal niedriger ausfallen soll, ist der ehrliche Weg nicht,
+die Antworten zu ändern, sondern zu prüfen, ob bei Gewalt versehentlich
+„häufig/intensiv" statt „selten/mild" gewählt wurde. Am Inhalt sollte nichts
+geändert werden: die harten Kapitel sind der Grund, warum die Bücher
+vertrauenswürdig sind.
 
 ## Dokumentation zur App-Verschlüsselung
 
