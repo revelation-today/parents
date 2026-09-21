@@ -536,8 +536,9 @@ function screenRead(id, q){
         <figcaption>${esc(d.art.caption)}<span class="who">${esc(d.art.title)} · ${esc(d.art.credit)}</span></figcaption>
       </figure>` : ""}
       ${d.html}
-      ${d.note ? `<details class="notes"><summary>Notes and sources</summary><p>${d.note}</p>
-        <p><a href="#/sources/${d.book}">All sources for this book →</a></p></details>` : ""}
+      <details class="notes"><summary>Notes and sources</summary>
+        ${d.note ? `<p>${d.note}</p>` : `<p>This day has no note of its own. It rests, like the rest of the book, on the longer study behind it — <em>${esc(b.study)}</em> — where the passage is discussed with its scholarship.</p>`}
+        <p><a href="#/sources/${d.book}">All sources for this book →</a></p></details>
       <div class="done-panel">
         <button class="btn ${read?"quiet":"accent"} block" data-toggle="${id}">${read ? "Read ✓ — tap to undo" : "Mark as read"}</button>
         ${planNext ? `<a class="btn ${dayDone ? "quiet" : "accent"} block" href="${readHref(planNext.id, planId, planNext.idx)}">${
