@@ -54,6 +54,10 @@ jobs:
             || /usr/libexec/PlistBuddy -c "Set :ITSAppUsesNonExemptEncryption false" "$PLIST"
           /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName Faithful parents" "$PLIST" \
             || /usr/libexec/PlistBuddy -c "Add :CFBundleDisplayName string Faithful parents" "$PLIST"
+          # Reading aloud keeps going with the screen locked.
+          /usr/libexec/PlistBuddy -c "Delete :UIBackgroundModes" "$PLIST" 2>/dev/null || true
+          /usr/libexec/PlistBuddy -c "Add :UIBackgroundModes array" "$PLIST"
+          /usr/libexec/PlistBuddy -c "Add :UIBackgroundModes:0 string audio" "$PLIST"
 
       - name: App Store Connect API key
         env:
