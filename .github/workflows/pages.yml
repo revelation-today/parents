@@ -26,8 +26,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # The recorded narration is served beside the app, but is not part of the
+      # iPhone bundle (which carries web/ only), so the app stays small.
+      - name: Put the site together
+        run: |
+          mkdir -p site
+          cp -r web/. site/
+          if [ -d audio ]; then mkdir -p site/audio && cp -r audio/. site/audio/; fi
+          du -sh site
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./web
+          path: ./site
       - id: deployment
         uses: actions/deploy-pages@v4
