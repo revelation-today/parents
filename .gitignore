@@ -4,3 +4,4 @@ ios/
 .DS_Store
 resources/*.ttf
 NUL
+web/audio
