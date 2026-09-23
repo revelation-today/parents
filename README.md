@@ -6,7 +6,7 @@ Two thirty-one-day devotionals on the fathers and mothers of the Bible — *Like
 |---|---|
 | `web/` | The finished app: one page (`index.html`), fonts, icons, the web-app manifest and an offline service worker. The iPhone app carries exactly these files. |
 | `resources/` | The app icon and splash screens the iOS build is made from. |
-| `.github/workflows/pages.yml` | Publishes `web/` to GitHub Pages on every push that changes it. |
+| `.github/workflows/pages.yml` | Publishes `web/` to GitHub Pages. Run by hand. |
 | `.github/workflows/ios.yml` | Builds the iPhone app on a Mac runner and uploads it to TestFlight. Run by hand. |
 | `capacitor.config.json` | App ID `net.revelationtoday.parent`, name "Faithful parents" (App Store Connect Apple ID 6813810391). |
 
@@ -20,7 +20,7 @@ python tools/app/build_app.py      # in the book project; rewrites web/index.htm
 git add web && git commit -m "…" && git push
 ```
 
-The push republishes the web version. For the iPhone app, run the iOS workflow again (next section).
+Then run *Actions → Deploy web app to Pages* to republish the web version. For the iPhone app, run the iOS workflow again (next section).
 
 ## The iPhone app
 
