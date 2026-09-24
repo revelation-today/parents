@@ -70,7 +70,24 @@ button{font:inherit;color:inherit}
 
 /* ---------- shell ---------- */
 .app{max-width:640px;overflow-x:clip;margin:0 auto;padding-inline:16px;padding-block:8px calc(var(--tabbar-h) + 32px + env(safe-area-inset-bottom,0px))}
-.screen-head{padding-block:18px 10px}
+[hidden]{display:none!important}
+.about-text p{font:400 14.5px/1.5 var(--ui);color:var(--ink);margin:0 0 10px}
+.about-text p.fine{color:var(--muted);font-size:13.5px}
+.screen-head{padding-block:18px 10px;position:relative}
+.gear{position:absolute;top:10px;right:-8px;width:44px;height:44px;display:grid;place-items:center;color:var(--muted);border-radius:12px}
+.gear svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.screen-head:has(.gear) .eyebrow,.screen-head:has(.gear) .screen-title{padding-right:40px}
+.choice{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;font:500 16px/1.3 var(--ui);cursor:pointer}
+.choice + .choice{border-top:1px solid var(--line)}
+.choice input{width:20px;height:20px;accent-color:var(--accent);margin:0}
+.sample{font:400 calc(18px * var(--read-scale))/1.55 var(--text);margin:12px 0 2px;color:var(--ink)}
+.linkrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;text-decoration:none;color:var(--ink);font:500 16px/1.3 var(--ui)}
+.linkrow + .linkrow{border-top:1px solid var(--line)}
+.linkrow small{color:var(--muted);font-weight:400;font-size:13.5px}
+details.more{border-top:1px solid var(--line);padding-top:10px;margin-top:2px}
+details.more + details.more{border-top:0;padding-top:0}
+details.more summary{cursor:pointer;font:600 15px/1.3 var(--ui);padding:4px 0}
+:root[data-face="sans"]{--text:-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif}
 .eyebrow{font:600 11.5px/1.2 var(--ui);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
 .screen-title{font:500 34px/1.1 var(--display);margin:4px 0 0;letter-spacing:-.01em;text-wrap:balance}
 .lede{color:var(--muted);margin:6px 0 0;max-width:34em}
@@ -78,7 +95,7 @@ button{font:inherit;color:inherit}
 .tabbar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:color-mix(in srgb,var(--surface) 88%,transparent);
   -webkit-backdrop-filter:saturate(1.4) blur(18px);backdrop-filter:saturate(1.4) blur(18px);
   border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
-.tabbar nav{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);height:var(--tabbar-h)}
+.tabbar nav{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);height:var(--tabbar-h)}
 .tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-decoration:none;color:var(--faint);font:500 10.5px/1 var(--ui)}
 .tab svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .tab[aria-current="page"]{color:var(--ink)}
@@ -124,6 +141,8 @@ button{font:inherit;color:inherit}
 .seg{display:grid;grid-template-columns:1fr 1fr;background:var(--sunk);border-radius:11px;padding:3px;gap:3px;margin:6px 0 4px}
 .seg a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:36px;border-radius:9px;text-decoration:none;font:600 13.5px/1 var(--ui);color:var(--muted)}
 .seg a[aria-current="page"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.seg button{display:flex;align-items:center;justify-content:center;min-height:36px;border:0;border-radius:9px;background:none;font:600 13.5px/1 var(--ui);color:var(--muted);cursor:pointer}
+.seg button.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
 
 .book-hero{padding:18px 0 4px}
 .book-hero .bt{font:500 30px/1.1 var(--display);margin:0;color:var(--accent)}
@@ -279,7 +298,7 @@ const UI = {
     backToLibrary: "Back to library", whereFrom: "Where this comes from",
     sourcesLede: "The scholarship behind these days. The notes at the end of each day name the works behind that day; below is the full list.",
     fathers: "Fathers", mothers: "Mothers",
-    credits: "Bible quotations marked NIV are used by permission; the full notice is under About. The pictures are engravings by Gustave Doré (1866), long out of copyright. The recorded narration was made with Kokoro, an open speech model (Apache 2.0).",
+    credits: "Bible quotations marked NIV are used by permission; the full notice is under Translations below. The pictures are engravings by Gustave Doré (1866), long out of copyright. The recorded narration was made with Kokoro, an open speech model (Apache 2.0).",
     back: "Back", smaller: "Smaller text", larger: "Larger text", readPassage: r => `Read ${r} ↗`,
     notes: "Notes and sources", allSources: "All sources for this book →", readUndo: "Read ✓ — tap to undo", markRead: "Mark as read",
     dayComplete: (a, b) => `Day ${a} complete · start Day ${b}`, nextInPlan: t => `Next in plan: ${t}`,
@@ -304,6 +323,12 @@ const UI = {
     downloadedToast: "Downloaded for offline listening", downloadStopped: "Download stopped — check the connection",
     downloadsRemoved: "Downloads removed", planStarted: n => n + " started", planRestarted: "Plan restarted", planStopped: "Plan stopped",
     marked: "Marked as read", unmarked: "Mark removed", confirmClear: "Clear all reading marks and plans?", cleared: "Progress cleared",
+    settings: "Settings", appearance: "Appearance", textSize: "Text size",
+    textSample: "As a father has compassion on his children, so the LORD has compassion on those who fear him.",
+    font: "Font", fontSerif: "Serif", fontSans: "Sans serif",
+    theme: "Light or dark", themeSystem: "As the device", themeLight: "Light", themeDark: "Dark",
+    privacyShort: "The app collects no data. Reading plans and progress stay on this device.",
+    website: "Website", privacy: "Privacy policy", contact: "Contact", contactSubject: "Faithful parents app",
   },
   de: {
     locale: "de-DE", speech: "de-DE", audioIndex: "index-de.json",
@@ -357,6 +382,12 @@ const UI = {
     downloadedToast: "Zum Offline-Hören geladen", downloadStopped: "Laden abgebrochen – bitte Verbindung prüfen",
     downloadsRemoved: "Geladene Lesungen entfernt", planStarted: n => `„${n}“ begonnen`, planRestarted: "Plan neu begonnen", planStopped: "Plan beendet",
     marked: "Als gelesen markiert", unmarked: "Markierung entfernt", confirmClear: "Alle Lesemarkierungen und Pläne löschen?", cleared: "Fortschritt gelöscht",
+    settings: "Einstellungen", appearance: "Darstellung", textSize: "Schriftgröße",
+    textSample: "Wie sich ein Vater über seine Kinder erbarmt, so erbarmt sich der HERR über die, die ihn fürchten.",
+    font: "Schrift", fontSerif: "Serifen", fontSans: "Ohne Serifen",
+    theme: "Hell oder dunkel", themeSystem: "Wie das Gerät", themeLight: "Hell", themeDark: "Dunkel",
+    privacyShort: "Die App erhebt keine Daten. Lesepläne und Fortschritt bleiben auf diesem Gerät.",
+    website: "Website", privacy: "Datenschutzerklärung", contact: "Kontakt", contactSubject: "Faithful-parents-App",
   },
 }[LANG];
 
@@ -403,7 +434,7 @@ function merge(remote){
   let changed = false;
   for (const [id,v] of Object.entries(remote.read || {})) if (!S.read[id] || (v && v.t > S.read[id].t)) { S.read[id] = v; changed = true; }
   for (const [id,v] of Object.entries(remote.plans || {})) if (!S.plans[id] || (v && v.t > S.plans[id].t)) { S.plans[id] = v; changed = true; }
-  if ((remote.t||0) > (S.t||0)) { if (remote.font) S.font = remote.font; if (remote.last) S.last = remote.last; if (remote.remind) S.remind = remote.remind; if (remote.voice) S.voice = remote.voice; changed = true; }
+  if ((remote.t||0) > (S.t||0)) { if (remote.theme) S.theme = remote.theme; if (remote.face) S.face = remote.face; if (remote.font) S.font = remote.font; if (remote.last) S.last = remote.last; if (remote.remind) S.remind = remote.remind; if (remote.voice) S.voice = remote.voice; changed = true; }
   return changed;
 }
 async function connect(){
@@ -770,10 +801,19 @@ const ICON = {
   back:'<svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>',
   speaker:'<svg viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg>',
   stop:'<svg viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/></svg>',
-  tick:'<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+  tick:'<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  gear:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>'
 };
+const gear = () => `<a class="gear" href="#/settings" aria-label="${UI.settings}">${ICON.gear}</a>`;
+/* Light, dark and the reading font, as the reader set them (untouched until they do). */
+function applyLook(){
+  const r = document.documentElement;
+  if (S.theme === "light" || S.theme === "dark") r.dataset.theme = S.theme;
+  else if (S.theme === "system") delete r.dataset.theme;
+  if (S.face === "sans") r.dataset.face = "sans"; else delete r.dataset.face;
+}
 function tabs(active){
-  const t = ["today","plans","library","about"].map(k => [k, UI.tabs[k]]);
+  const t = ["today","plans","library"].map(k => [k, UI.tabs[k]]);
   document.getElementById("tabs").innerHTML = t.map(([k,l]) =>
     `<a class="tab" href="#/${k}" ${active===k?'aria-current="page"':''}>${ICON[k]}<span>${l}</span></a>`).join("");
 }
@@ -801,7 +841,7 @@ function toast(msg){
 function screenToday(){
   const act = activePlans();
   const date = new Date().toLocaleDateString(UI.locale,{weekday:"long",day:"numeric",month:"long"});
-  let h = `<header class="screen-head"><div class="eyebrow">${esc(date)}</div><h1 class="screen-title">${UI.today}</h1></header><div class="stack">`;
+  let h = `<header class="screen-head">${gear()}<div class="eyebrow">${esc(date)}</div><h1 class="screen-title">${UI.today}</h1></header><div class="stack">`;
   if (!act.length){
     const p = PLAN.side;
     h += `<section class="card plan-card">
@@ -835,7 +875,7 @@ function screenToday(){
 }
 
 function screenPlans(){
-  let h = `<header class="screen-head"><div class="eyebrow">${UI.readingPlans}</div><h1 class="screen-title">${UI.plansTitle}</h1>
+  let h = `<header class="screen-head">${gear()}<div class="eyebrow">${UI.readingPlans}</div><h1 class="screen-title">${UI.plansTitle}</h1>
     <p class="lede">${UI.plansLede}</p></header><div class="stack">`;
   for (const p of L.plans){
     const st = S.plans[p.id]; const on = st && !st.stopped;
@@ -873,7 +913,7 @@ function screenPlan(id){
 function screenLibrary(k){
   k = k === "M" ? "M" : "F";
   const b = L.books[k];
-  let h = `<header class="screen-head"><div class="eyebrow">${UI.library}</div><h1 class="screen-title">${UI.twoBooks}</h1></header>
+  let h = `<header class="screen-head">${gear()}<div class="eyebrow">${UI.library}</div><h1 class="screen-title">${UI.twoBooks}</h1></header>
     <div class="seg" role="tablist"><a href="#/library/F" ${k==="F"?'aria-current="page"':''}>${esc(L.books.F.title)}</a><a href="#/library/M" ${k==="M"?'aria-current="page"':''}>${esc(L.books.M.title)}</a></div>
     <div data-book="${k}">
     <div class="book-hero"><h2 class="bt">${esc(b.title)}</h2><p class="bs">${esc(b.tagline)}</p><p class="book-verse">${b.verse}</p></div>
@@ -966,7 +1006,7 @@ function screenRead(id, q){
     </article>`;
 }
 
-function screenAbout(){
+function screenSettings(){
   const F = L.books.F;
   const syncLine = sync.state === "account"
     ? `<p class="sync on"><i></i>${UI.syncAccount}</p>`
@@ -985,20 +1025,34 @@ function screenAbout(){
        </div>`
     : `<div class="section-label">${UI.reminder}</div>
        <div class="card"><p class="fine" style="margin:0">${UI.reminderWeb}</p></div>`;
-  return `<header class="screen-head"><div class="eyebrow">${UI.about}</div><h1 class="screen-title">${UI.aboutTitle}</h1></header>
-  <div class="prose">
-    ${UI.aboutText}
-    ${NATIVE ? "" : `<h2>${UI.onIphone}</h2>
-    <ol>${UI.iphoneSteps}</ol>`}
-    ${syncLine}
-    <h2>${UI.translations}</h2>
-    ${F.languages}
-  </div>
+  const web = "https://revelation-today.github.io/parents/";
+  const mail = "mailto:revelation-today@web.de?subject=" + encodeURIComponent(UI.contactSubject);
+  const theme = S.theme || "system";
+  return `<div class="readbar"><a class="iconbtn" href="#/today" aria-label="${UI.back}">${ICON.back}</a><span class="grow">${UI.settings}</span><span style="width:40px"></span></div>
+  <header class="screen-head"><h1 class="screen-title">${UI.settings}</h1></header>
+
   <div class="section-label">${UI.language}</div>
-  <div class="card"><div class="setting" style="align-items:center">
-    <label class="lbl" for="lang-pick">${UI.language}</label>
-    <select id="lang-pick">${Object.keys(DATA.langs).map(k => `<option value="${k}" ${k === LANG ? "selected" : ""}>${{en: "English", de: "Deutsch"}[k] || k}</option>`).join("")}</select>
-  </div></div>
+  <div class="card" style="padding-block:4px">
+    ${Object.keys(DATA.langs).map(k => `<label class="choice">${{en: "English", de: "Deutsch"}[k] || k}<input type="radio" name="lang" value="${k}" ${k === LANG ? "checked" : ""}></label>`).join("")}
+  </div>
+
+  <div class="section-label">${UI.appearance}</div>
+  <div class="card">
+    <div class="setting" style="display:block">
+      <label class="lbl" for="text-size">${UI.textSize}</label>
+      <div style="display:flex;align-items:center;gap:12px;margin-top:8px"><span style="font:13px var(--ui)">A</span>
+        <input type="range" id="text-size" min="0.85" max="1.35" step="0.05" value="${S.font || 1}" style="flex:1"><span style="font:22px var(--ui)">A</span></div>
+      <p class="sample">${UI.textSample}</p>
+    </div>
+    <div class="setting" style="align-items:center">
+      <span class="lbl">${UI.font}</span>
+      <div class="seg face" style="width:60%;margin:0">${`<button class="${S.face === "sans" ? "" : "on"}" data-face="serif">${UI.fontSerif}</button><button class="${S.face === "sans" ? "on" : ""}" data-face="sans">${UI.fontSans}</button>`}</div>
+    </div>
+    <div class="setting" style="align-items:center">
+      <label class="lbl" for="theme-pick">${UI.theme}</label>
+      <select id="theme-pick">${["system", "light", "dark"].map(v => `<option value="${v}" ${v === theme ? "selected" : ""}>${UI["theme" + v[0].toUpperCase() + v.slice(1)]}</option>`).join("")}</select>
+    </div>
+  </div>
   ${reminder}
   ${canSpeak() ? `<div class="section-label">${UI.readAloud}</div>
   <div class="card">
@@ -1032,6 +1086,22 @@ function screenAbout(){
     </div>
     <p class="voice-hint" id="voice-hint" hidden>${UI.voiceHint}</p>
   </div>` : ""}
+  <div class="section-label">${UI.about}</div>
+  <div class="card">
+    <div class="about-text">
+      ${UI.aboutText}
+      <p class="fine">${UI.privacyShort}</p>
+      ${sync.state === "account" ? syncLine : ""}
+      <p class="fine">${UI.credits}</p>
+    </div>
+    <div style="margin-top:6px">
+      <a class="linkrow" href="${web}" target="_blank" rel="noopener">${UI.website}<small>revelation-today.github.io/parents</small></a>
+      <a class="linkrow" href="${web}privacy.html" target="_blank" rel="noopener">${UI.privacy}<small>›</small></a>
+      <a class="linkrow" href="${mail}">${UI.contact}<small>revelation-today@web.de</small></a>
+    </div>
+    ${NATIVE ? "" : `<details class="more"><summary>${UI.onIphone}</summary><ol class="fine">${UI.iphoneSteps}</ol></details>`}
+    <details class="more"><summary>${UI.translations}</summary><div class="prose fine" style="padding:0">${F.languages}</div></details>
+  </div>
   <div class="section-label">${UI.progress}</div>
   <div class="card"><p class="fine" style="margin:0 0 10px">${UI.clearText(sync.state==="account")}</p><button class="btn quiet" data-reset="1">${UI.clear}</button></div>`;
 }
@@ -1052,27 +1122,30 @@ function render(){
       html = screenRead(seg[1], q); tab = q.get("plan") ? "today" : "library";
       if (DAY[seg[1]] && S.last !== seg[1]) { S.last = seg[1]; try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
       break;
-    case "about": html = screenAbout(); tab = "about"; break;
+    case "about": case "settings": html = screenSettings(); tab = "settings"; break;
     default: html = screenToday();
   }
   document.documentElement.style.setProperty("--read-scale", S.font || 1);
+  applyLook();
   document.getElementById("app").innerHTML = html;
   tabs(tab);
   if (talk.playing){                     // same day re-drawn (e.g. marked as read): keep following the voice
     const root = document.querySelector("article.day");
     if (root){ const cur = talk.current; talk.blocks = readableBlocks(root); talk.current = -1; markSpeaking(cur); updateListenButton(); }
   }
-  if (seg[0] === "about") fillVoiceSettings();
+  if (seg[0] === "about" || seg[0] === "settings") fillVoiceSettings();
 }
 let lastPath = null;
 window.addEventListener("hashchange", () => { if (talk.playing) stopReading(); render(); const p = location.hash.split("?")[0]; if (p !== lastPath) window.scrollTo(0,0); lastPath = p; });
 
 document.addEventListener("change", e => {
   const el = e.target;
-  if (el.id === "lang-pick"){
+  if (el.name === "lang"){
     try { localStorage.setItem("parents-lang", el.value); } catch (e) {}
-    location.hash = "#/about"; location.reload(); return;
+    location.hash = "#/settings"; location.reload(); return;
   }
+  if (el.id === "theme-pick"){ S.theme = el.value; commit(); applyLook(); return; }
+  if (el.id === "text-size"){ S.font = Number(el.value); commit(); return; }
   if (el.id === "voice-mode"){
     S.voice = Object.assign({rate: 1}, S.voice, {mode: el.value}); commit();
     const row = document.getElementById("device-voice-row"); if (row) row.hidden = el.value !== "device";
@@ -1091,7 +1164,14 @@ document.addEventListener("change", e => {
   }
 });
 
+// the text size follows the slider while it moves, and the sample shows it
+document.addEventListener("input", e => {
+  if (e.target.id === "text-size") document.documentElement.style.setProperty("--read-scale", e.target.value);
+});
+
 document.addEventListener("click", async e => {
+  const face = e.target.closest("[data-face]");
+  if (face){ S.face = face.dataset.face; commit(); render(); return; }
   if (e.target.closest("[data-listen]")){ talk.playing ? stopReading() : startReading(0); return; }
   if (e.target.closest("[data-preview]")){ previewVoice(); return; }
   const dl = e.target.closest("[data-download]");
