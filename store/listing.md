@@ -79,6 +79,8 @@ HTTPS beim optionalen Link).
 ## App-Datenschutz (Vertrauen und Sicherheit → App-Datenschutz)
 
     Datenschutzrichtlinie-URL: https://revelation-today.github.io/parents/privacy.html
+                               (im deutschen Eintrag: …/parents/privacy-de.html — die
+                               deutsche Fassung ist die rechtlich verbindliche)
     Datenerfassung:            „Es werden keine Daten von dieser App erfasst."
 
     Keine Accounts, keine Analyse, keine Werbung, kein Tracking.
@@ -303,7 +305,7 @@ Wenn schon eine Version im Store ist:
 Sprachen hängen an zwei Stellen, und beide müssen gefüllt werden:
 
 1. **App-Informationen** (gilt für alle Versionen): Name, Untertitel,
-   Datenschutzrichtlinie-URL.
+   Datenschutzrichtlinie-URL. Für Deutsch: `https://revelation-today.github.io/parents/privacy-de.html`.
 2. **Die Version** (hier 1.0): Werbetext, Beschreibung, Schlüsselbegriffe,
    Support-URL, Marketing-URL, Neue Funktionen, Screenshots.
 
