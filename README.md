@@ -10,6 +10,18 @@ Two thirty-one-day devotionals on the fathers and mothers of the Bible — *Like
 | `.github/workflows/ios.yml` | Builds the iPhone app on a Mac runner and uploads it to TestFlight. Run by hand. |
 | `capacitor.config.json` | App ID `net.revelationtoday.parent`, name "Faithful parents" (App Store Connect Apple ID 6813810391). |
 
+## Languages
+
+English and German. The app follows the phone's language, and the reader can switch under
+*About → Language*; each language keeps its own reading progress. The German books are
+*Wie ein Vater* and *Wie eine Mutter tröstet* (`output/devotional/de/` in the book project), with
+the Bible quotations translated by the author. Narration: English with Kokoro (`audio/index.json`),
+German with Piper, voices Karlsson and Kerstin (`audio/index-de.json`):
+
+```
+python tools/app/build_audio.py --lang de
+```
+
 ## Where the text comes from
 
 `web/index.html` is generated — never edit it by hand. The books live in the book project
