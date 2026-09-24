@@ -3,9 +3,10 @@
 Die Feldnamen stehen so, wie App Store Connect sie auf Deutsch zeigt.
 Zeichengrenzen in eckigen Klammern.
 
-Die App selbst ist **auf Englisch**. Die Primärsprache des Eintrags ist
-Englisch (UK); der deutsche Eintrag (unten) macht die App in der deutschen
-Suche auffindbar und sagt im ersten Satz, dass die Texte englisch sind.
+Die App gibt es **auf Englisch und Deutsch**: *Like a Father* / *As a Mother Comforts*
+und *Wie ein Vater* / *Wie eine Mutter tröstet*. Sie folgt der Sprache des Geräts und lässt
+sich unter *About/Über* umstellen. Die Primärsprache des Eintrags bleibt Englisch (UK);
+der deutsche Eintrag (Teil 3) beschreibt die deutsche Ausgabe.
 
 ---
 
@@ -21,8 +22,9 @@ Suche auffindbar und sagt im ersten Satz, dass die Texte englisch sind.
 
 ## Inhaltsrechte → „Informationen zu den Inhaltsrechten einrichten"
 
-Die App enthält Inhalte Dritter: Bibelzitate aus der New International Version
-(Anglicised). Antwort:
+Die App enthält Inhalte Dritter: in der englischen Ausgabe Bibelzitate aus der New
+International Version (Anglicised). Die deutsche Ausgabe zitiert nur eigene Übersetzungen
+des Autors und enthält keine Inhalte Dritter. Antwort:
 
     Ja — die App enthält, zeigt oder greift auf Inhalte Dritter zu,
     und ich habe die Rechte, diese Inhalte zu verwenden.
@@ -53,7 +55,8 @@ Familienfiltern.
 Antworten, die gleich bleiben:
 
     In-App-Steuerelemente:   Uneingeschränkter Internetzugriff = Nein
-                             (nur ein optionaler Link zu BibleGateway.com)
+                             (nur ein optionaler Link zum Bibeltext: BibleGateway.com
+                             auf Englisch, bibleserver.com auf Deutsch)
     Benutzergenerierte Inhalte / Soziale Medien: Nein
     Sexualität/Nacktheit:    Keine (keine Darstellung; Tag 24 nennt eine
                              Vergewaltigung, ohne sie zu schildern)
@@ -87,12 +90,17 @@ HTTPS beim optionalen Link).
 
     This is a self-contained reading app, not a wrapper around a website.
 
-    • All content — two complete 31-day devotionals, 62 readings — is bundled in the app.
-      It works with the device in airplane mode; please feel free to test it that way.
+    • All text — two complete 31-day devotionals, 62 readings, in English and German — is
+      bundled in the app. It works with the device in airplane mode; please feel free to test it
+      that way. The app follows the device language; About → Language switches it.
+    • Read aloud: recorded narration is streamed from the app's own website
+      (revelation-today.github.io/parents) and can be downloaded for offline listening; without
+      a connection the app reads with the device's built-in voice.
     • The app has no accounts and no server. Reading plans, progress, marked days and
       text size are stored on the device.
     • The only outbound link is optional: on each day, "Read <passage>" opens that Bible
-      passage on BibleGateway.com in the browser, for readers who want the full chapter.
+      passage in the browser (BibleGateway.com in English, bibleserver.com in German), for
+      readers who want the full chapter.
     • To see the plans in action: Plans → Side by Side → Start, then Today.
 
     No sign-in is required, so no demo account is needed.
@@ -117,8 +125,10 @@ HTTPS beim optionalen Link).
     04-library   die Bibliothek (As a Mother Comforts)
     05-dark      ein Tag im Dunkelmodus
 
-    Die Screenshots zeigen die englische App und gelten für beide Sprachen.
-    Lässt man sie bei einer Sprache leer, zeigt der Store die der Primärsprache.
+    Die Screenshots zeigen die englische App. Für den deutschen Eintrag sind deutsche
+    Screenshots besser; make_screenshots.py kann sie erzeugen, wenn es die Sprache „de"
+    setzt (noch nicht eingebaut). Lässt man sie bei einer Sprache leer, zeigt der Store
+    die der Primärsprache.
 
 ---
 
@@ -173,7 +183,9 @@ HTTPS beim optionalen Link).
     • Your reading progress stays on your device.
     • Light and dark, and text you can make bigger.
 
-    Both devotionals rest on two longer studies of the biblical material, and the notes point to the scholarship behind particular days.
+    Both devotionals rest on published biblical scholarship, and the notes name the works behind each day.
+
+    Also in German: Wie ein Vater and Wie eine Mutter tröstet. The app follows your device's language.
 
     Scripture quotations marked NIV are taken from the Holy Bible, New International Version (Anglicised edition). Copyright © 1979, 1984, 2011 by Biblica. Used by permission of Hodder & Stoughton Ltd, an Hachette UK company. All rights reserved. 'NIV' is a registered trademark of Biblica. UK trademark number 1448790.
 
@@ -197,9 +209,9 @@ HTTPS beim optionalen Link).
 
 # Teil 3 — Deutsch
 
-Der Name bleibt englisch: er ist der Name der App, und die App ist englisch.
-Untertitel und der erste Satz der Beschreibung sagen das ausdrücklich, damit
-niemand eine deutsche Andacht erwartet.
+Die App ist auf Deutsch vollständig: beide Bücher, alle 62 Tage, die Lesepläne und die
+Vorlesefunktion. Der Name bleibt „Faithful parents", weil er auch auf dem Home-Bildschirm
+so heißt; Untertitel und Beschreibung sind deutsch und nennen die deutschen Buchtitel.
 
 ## Name [30]
 
@@ -207,23 +219,21 @@ niemand eine deutsche Andacht erwartet.
 
 ## Untertitel [30]
 
-    Andacht für Eltern (englisch)
+    Andachten für Väter und Mütter
 
 ## Werbetext [170]
 
-    Zwei Andachtsbücher über die Väter und Mütter der Bibel, je 31 Tage, mit Leseplänen, dem hebräischen Wort des Tages und Quellen. Die Texte der App sind auf Englisch.
+    Zwei Andachtsbücher über die Väter und Mütter der Bibel, je 31 Tage – mit Leseplänen, dem hebräischen Wort des Tages, Quellen und Vorlesen. Auf Deutsch und Englisch.
 
 ## Beschreibung [4000]
 
-    Hinweis: Alle Texte dieser App sind auf Englisch.
+    Zwei Andachtsbücher mit je 31 Tagen in einer App: „Wie ein Vater" über die Väter der Bibel und „Wie eine Mutter tröstet" über ihre Mütter. Lies das eine, lies das andere, oder lies beide nebeneinander.
 
-    Zwei Andachtsbücher mit je 31 Tagen in einer App: Like a Father über die Väter der Bibel und As a Mother Comforts über ihre Mütter. Lies das eine, lies das andere, oder lies beide nebeneinander.
-
-    Die Eltern der Bibel sind keine Heldengalerie. Abraham hebt das Messer über seinen Sohn. Eli weist seine Söhne nicht zurecht. David weint zu spät. Sara treibt eine Sklavin in die Wüste; Rebekka täuscht ihren Mann; Rahel und Lea führen ihren Streit über die Namen ihrer Kinder. Daneben stehen Hanna, die betete; Rizpa, die ihre toten Söhne monatelang bewachte; Jochebed, die ein kleines Kästlein baute; Hiob, der für Kinder betete, die er nicht in der Hand hatte; Manoach, der nachfragte; und der Vater aus Lukas 15, der lief.
+    Die Eltern der Bibel sind keine Heldengalerie. Abraham hebt das Messer über seinen Sohn. Eli wehrt seinen Söhnen nicht. David weint zu spät. Sara treibt eine Sklavin in die Wüste; Rebekka täuscht ihren Mann; Rahel und Lea tragen ihren Streit über die Namen ihrer Kinder aus. Daneben stehen Hanna, die ihr Herz vor Gott ausschüttete; Rizpa, die ihre toten Söhne monatelang bewachte; Jochebed, die ihrem Sohn eine kleine Arche baute; Hiob, der für Kinder betete, die er nicht in der Hand hatte; Manoach, der fragte, wie; und der Vater aus Lukas 15, der seinem Sohn entgegenlief.
 
     Jeder Tag enthält:
 
-    • eine kurze Bibellese und einen Schlüsselvers
+    • einen kurzen Bibelabschnitt und einen Schlüsselvers
     • ein Wort aus dem Hebräischen oder Griechischen und was es bedeutet
     • eine Seite über einen Vater oder eine Mutter, in klarer Sprache
     • zwei Fragen zum Nachdenken
@@ -232,36 +242,43 @@ niemand eine deutsche Andacht erwartet.
 
     SIEBEN LESEPLÄNE
 
-    • Side by Side — beide Bücher zusammen, 31 Tage
-    • Like a Father — 31 Tage
-    • As a Mother Comforts — 31 Tage
-    • Teaching Your Children — 8 Tage
-    • When Parents Get It Wrong — 8 Tage
-    • Grief and Loss — 7 Tage
-    • If a Parent Hurt You — 7 Tage
+    • Seite an Seite – beide Bücher zusammen, 31 Tage
+    • Wie ein Vater – 31 Tage
+    • Wie eine Mutter tröstet – 31 Tage
+    • Deine Kinder lehren – 8 Tage
+    • Wenn Eltern Fehler machen – 8 Tage
+    • Trauer und Verlust – 7 Tage
+    • Wenn Vater oder Mutter dir wehgetan haben – 7 Tage
 
-    Kein Plan läuft dir davon. Verpasst du eine Woche, wartet er da, wo du aufgehört hast.
+    Kein Plan läuft dir davon. Verpasst du eine Woche, wartet er dort, wo du aufgehört hast.
+
+    ZUM HÖREN
+
+    Jeder Tag kann vorgelesen werden – von einer aufgenommenen Stimme oder von der Stimme deines Geräts. Der Text läuft beim Vorlesen mit, und ein Tipp auf einen Absatz springt dorthin. Die Lesungen lassen sich für unterwegs aufs Gerät laden.
 
     EHRLICH BEI DEN SCHWEREN STELLEN
 
-    Diese Bücher lassen die schwierigen Texte nicht aus: die Rute in den Sprüchen, die Töchter, die Väter, die Schaden angerichtet haben, und die Leser, denen die eigenen Eltern wehgetan haben. Wo die Fachleute uneins sind, sagen es die Anmerkungen.
+    Diese Bücher lassen die schwierigen Texte nicht aus: die Rute in den Sprüchen, die Töchter, die Väter, die Schaden angerichtet haben, und die Leser, denen die eigenen Eltern wehgetan haben. Wo die Forschung uneins ist, sagen es die Anmerkungen.
 
     ZUM LESEN GEBAUT
 
-    • Funktioniert vollständig offline. Keine Anmeldung, kein Konto, keine Werbung.
+    • Die Texte funktionieren vollständig offline. Keine Anmeldung, kein Konto, keine Werbung.
     • Dein Lesefortschritt bleibt auf deinem Gerät.
     • Hell und dunkel, und Text, den du größer stellen kannst.
+    • Deutsch und Englisch – die App folgt der Sprache deines Geräts und lässt sich umstellen.
 
-    Beide Andachtsbücher stehen auf zwei längeren Studien zum biblischen Material, und die Anmerkungen verweisen auf die Forschung hinter einzelnen Tagen.
+    Beide Bücher stützen sich auf veröffentlichte Bibelwissenschaft; die Anmerkungen nennen die Werke hinter jedem Tag. Die Bibelzitate der deutschen Ausgabe sind eigene Übersetzungen aus dem Hebräischen und Griechischen.
 
-    Scripture quotations marked NIV are taken from the Holy Bible, New International Version (Anglicised edition). Copyright © 1979, 1984, 2011 by Biblica. Used by permission of Hodder & Stoughton Ltd, an Hachette UK company. All rights reserved. 'NIV' is a registered trademark of Biblica. UK trademark number 1448790.
+    Scripture quotations in the English edition marked NIV are taken from the Holy Bible, New International Version (Anglicised edition). Copyright © 1979, 1984, 2011 by Biblica. Used by permission of Hodder & Stoughton Ltd, an Hachette UK company. All rights reserved. 'NIV' is a registered trademark of Biblica. UK trademark number 1448790.
 
 ## Schlüsselbegriffe [100, mit Komma getrennt, ohne Leerzeichen]
 
-    andacht,bibel,väter,mütter,eltern,leseplan,christlich,gebet,familie,glaube,vaterschaft,hebräisch
+    andacht,bibel,väter,mütter,eltern,leseplan,christlich,gebet,familie,glaube,hörbuch,vorlesen
 
 Der Name der App („Faithful parents") und der Untertitel werden von der Suche
-ohnehin erfasst — sie gehören nicht in die Schlüsselbegriffe.
+ohnehin erfasst — sie gehören nicht in die Schlüsselbegriffe. „vaterschaft" und
+„hebräisch" sind für „hörbuch" und „vorlesen" gewichen: Wer eine Andacht zum
+Hören sucht, findet die App jetzt auch.
 
 ## Support-URL
 
@@ -273,7 +290,13 @@ ohnehin erfasst — sie gehören nicht in die Schlüsselbegriffe.
 
 ## Neue Funktionen in dieser Version
 
+Wenn 1.0 noch nicht veröffentlicht ist:
+
     Erste Version.
+
+Wenn schon eine Version im Store ist:
+
+    Jetzt auch auf Deutsch: „Wie ein Vater" und „Wie eine Mutter tröstet", alle 62 Tage, mit Leseplänen und aufgenommener Lesung. Die App folgt der Sprache deines Geräts; umstellen kannst du sie unter „Über".
 
 ---
 
@@ -307,4 +330,5 @@ Sprachen hängen an zwei Stellen, und beide müssen gefüllt werden:
 - Eine Sprache lässt sich vor der Einreichung wieder entfernen (im selben Menü);
   ist die Version veröffentlicht, geht das erst mit der nächsten Version.
 - Weitere Sprachen später (z. B. Indonesisch, Türkisch) laufen genauso. Sinnvoll
-  ist das erst, wenn die Texte der App selbst in der Sprache vorliegen.
+  ist das erst, wenn die Texte der App selbst in der Sprache vorliegen – wie jetzt beim
+  Deutschen.
