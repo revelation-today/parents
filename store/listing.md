@@ -269,8 +269,6 @@ so heißt; Untertitel und Beschreibung sind deutsch und nennen die deutschen Buc
 
     Beide Bücher stützen sich auf veröffentlichte Bibelwissenschaft; die Anmerkungen nennen die Werke hinter jedem Tag. Die Bibelzitate der deutschen Ausgabe sind eigene Übersetzungen aus dem Hebräischen und Griechischen.
 
-    Scripture quotations in the English edition marked NIV are taken from the Holy Bible, New International Version (Anglicised edition). Copyright © 1979, 1984, 2011 by Biblica. Used by permission of Hodder & Stoughton Ltd, an Hachette UK company. All rights reserved. 'NIV' is a registered trademark of Biblica. UK trademark number 1448790.
-
 ## Schlüsselbegriffe [100, mit Komma getrennt, ohne Leerzeichen]
 
     andacht,bibel,väter,mütter,eltern,leseplan,christlich,gebet,familie,glaube,hörbuch,vorlesen
