@@ -1,13 +1,14 @@
 # Like a Father, As a Mother
 
-Two thirty-one-day devotionals on the fathers and mothers of the Bible — *Like a Father* and *As a Mother Comforts* — as an iPhone app and an installable web app, with seven reading plans.
+Two thirty-one-day devotionals on the fathers and mothers of the Bible — *Like a Father* and *As a Mother Comforts* — as an iPhone app, an Android app and an installable web app, with seven reading plans.
 
 | Where | What |
 |---|---|
-| `web/` | The finished app: one page (`index.html`), fonts, icons, the web-app manifest and an offline service worker. The iPhone app carries exactly these files. |
-| `resources/` | The app icon and splash screens the iOS build is made from. |
+| `web/` | The finished app: one page (`index.html`), fonts, icons, the web-app manifest and an offline service worker. The iPhone and Android apps carry exactly these files. |
+| `resources/` | The app icon and splash screens the iOS and Android builds are made from, and the Android notification icon. |
 | `.github/workflows/pages.yml` | Publishes `web/` to GitHub Pages. Run by hand. |
 | `.github/workflows/ios.yml` | Builds the iPhone app on a Mac runner and uploads it to TestFlight. Run by hand. |
+| `.github/workflows/android.yml` | Builds the Android app on a Linux runner; signed `.aab` and `.apk` as downloads, optionally uploaded to Google Play. Run by hand. |
 | `capacitor.config.json` | App ID `net.revelationtoday.parent`, name "Faithful parents" (App Store Connect Apple ID 6813810391). |
 
 ## Languages
@@ -66,6 +67,20 @@ and uploads it.
 - App Privacy: *Data Not Collected* — progress is stored only on the device.
 - Category: Books (or Reference).
 - Scripture quotations marked NIV: the notice required by Biblica is in the app under *About → Translations*.
+
+## The Android app
+
+Built the same way, without Android Studio: `.github/workflows/android.yml` creates the Android
+project from `web/` on a Linux runner, signs it with the upload key, and leaves a `.aab` (for
+Google Play) and a `.apk` (to install on your own phone) under the run's *Artifacts*. With a
+Play service-account key it also uploads to a Play track.
+
+Registering with Google Play, the upload key, the secrets, the *App content* questions, the
+listing in English and German, and the compulsory 14-day closed test are all in
+[`store/listing-android.md`](store/listing-android.md).
+
+Play graphics: `python store/make_play_graphics.py` (icon 512 and feature graphics) and
+`python store/make_screenshots.py [--lang de] --only android-phone android-tablet`.
 
 ## The web version
 

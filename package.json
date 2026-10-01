@@ -2,12 +2,15 @@
   "name": "like-a-father-app",
   "version": "1.0.0",
   "private": true,
-  "description": "Like a Father, As a Mother: two Bible devotionals with reading plans, for iPhone and the web.",
+  "description": "Like a Father, As a Mother: two Bible devotionals with reading plans, for iPhone, Android and the web.",
   "scripts": {
-    "sync": "cap sync ios"
+    "sync": "cap sync ios",
+    "sync:android": "cap sync android"
   },
   "dependencies": {
     "@capacitor-community/text-to-speech": "^8.0.2",
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/app": "^8.1.1",
     "@capacitor/core": "^8.5.2",
     "@capacitor/ios": "^8.5.2",
     "@capacitor/local-notifications": "^8.3.1"

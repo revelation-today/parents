@@ -1,5 +1,9 @@
 node_modules/
-ios/
+/ios/
+/android/
+*.jks
+*.keystore
+play-service-account*.json
 *.p8
 .DS_Store
 resources/*.ttf

@@ -1,13 +1,17 @@
 """App Store screenshots, rendered from the real app.
 
-    python store/make_screenshots.py
+    python store/make_screenshots.py                      # English, all sizes
+    python store/make_screenshots.py --lang de            # German, into screenshots/de/
+    python store/make_screenshots.py --only android-phone android-tablet
 
 Renders web/index.html in an iframe of exactly the device's logical size, at its
-pixel density, and crops the result to Apple's required dimensions:
-6.9" iPhone (1320x2868), 6.5" iPhone (1242x2688), 13" iPad (2064x2752).
+pixel density, and crops the result to the stores' required dimensions:
+6.9" iPhone (1320x2868), 6.5" iPhone (1242x2688), 13" iPad (2064x2752) for Apple;
+Android phone (1080x2160) and 10" tablet (1600x2560) for Google Play, which
+refuses anything longer than 2:1 and so cannot take the iPhone shots.
 The app is seeded with a plan in progress so the screens look lived-in.
 """
-import json, pathlib, shutil, subprocess, tempfile, time
+import argparse, json, pathlib, shutil, subprocess, tempfile, time
 from datetime import date, timedelta
 from PIL import Image
 
@@ -16,7 +20,8 @@ APP = ROOT / "web/index.html"
 OUT = ROOT / "store/screenshots"
 EDGE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 # logical size and pixel density per device family
-SIZES = {"6.9": (440, 956, 3), "6.5": (414, 896, 3), "ipad-13": (1032, 1376, 2)}
+SIZES = {"6.9": (440, 956, 3), "6.5": (414, 896, 3), "ipad-13": (1032, 1376, 2),
+         "android-phone": (360, 720, 3), "android-tablet": (800, 1280, 2)}
 
 now = int(time.time() * 1000)
 read = {f"{b}{n}": {"r": True, "t": now} for b in "FM" for n in range(1, 8)}
@@ -26,13 +31,12 @@ STATE = {"read": read,
          "font": 1, "last": "F4", "t": now}
 
 SEED = """<script>
-const __M = {'like-a-father-as-a-mother-v1': %s};
+const __M = {'%s': %s, 'parents-lang': '%s'};
 try { Object.defineProperty(window, 'localStorage', {configurable: true, value: {
   getItem: k => (k in __M ? __M[k] : null), setItem: (k, v) => { __M[k] = String(v); },
   removeItem: k => { delete __M[k]; }, clear: () => {} }}); } catch (e) {}
-%s
 </script>
-""" % (json.dumps(json.dumps(STATE)), "")
+"""
 
 SHOTS = [
     ("01-today", "#/today", False),
@@ -44,18 +48,28 @@ SHOTS = [
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--lang", choices=["en", "de"], default="en")
+    ap.add_argument("--only", nargs="+", choices=list(SIZES), help="sizes to render (default: all)")
+    args = ap.parse_args()
+    # Each language keeps its own progress under its own key.
+    key = "like-a-father-as-a-mother-v1" + ("" if args.lang == "en" else "-" + args.lang)
+    seed_base = SEED % (key, json.dumps(json.dumps(STATE)), args.lang)
+    out = OUT if args.lang == "en" else OUT / args.lang
     work = pathlib.Path(tempfile.mkdtemp(prefix="shots-"))
     shutil.copytree(ROOT / "web", work / "web", dirs_exist_ok=True)
     page = (work / "web/index.html").read_text(encoding="utf-8")
     for dark in (False, True):
-        seed = SEED
+        seed = seed_base
         if dark:
             seed = seed.replace("</script>", "document.documentElement.dataset.theme = 'dark';\n</script>")
         name = "seeded-dark.html" if dark else "seeded.html"
         (work / "web" / name).write_text(page.replace("<body>", "<body>\n" + seed, 1), encoding="utf-8")
 
     for label, (w, h, scale) in SIZES.items():
-        dest = OUT / label
+        if args.only and label not in args.only:
+            continue
+        dest = out / label
         dest.mkdir(parents=True, exist_ok=True)
         for name, route, dark in SHOTS:
             src = ("seeded-dark.html" if dark else "seeded.html") + route
