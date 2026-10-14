@@ -79,8 +79,6 @@ Registering with Google Play, the upload key, the secrets, the *App content* que
 listing in English and German, and the compulsory 14-day closed test are all in
 [`store/listing-android.md`](store/listing-android.md).
 
-App icon (the Hebrew words אב and אם, father and mother): `python store/make_app_icons.py`, which
-redraws `resources/` and `web/icons/`; run it before the Play graphics.
 Play graphics: `python store/make_play_graphics.py` (icon 512 and feature graphics) and
 `python store/make_screenshots.py [--lang de] --only android-phone android-tablet`.
 
