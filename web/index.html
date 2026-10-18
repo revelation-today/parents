@@ -77,6 +77,9 @@ button{font:inherit;color:inherit}
 .logo-note img{width:56px;height:56px;border-radius:13px;flex:none}
 .logo-note p{margin:0 0 6px}
 .logo-note p:last-child{margin:0}
+.help ul,.help ol{margin:6px 0 10px;padding-left:20px;font:400 14.5px/1.5 var(--ui)}
+.help details.more:first-child{border-top:0;padding-top:0}
+.help li{margin:0 0 6px}.help p{font:400 14.5px/1.5 var(--ui);margin:6px 0 10px}
 .screen-head{padding-block:18px 10px;position:relative}
 .gear{position:absolute;top:10px;right:-8px;width:44px;height:44px;display:grid;place-items:center;color:var(--muted);border-radius:12px}
 .gear svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
@@ -315,6 +318,27 @@ const UI = {
     time: "Time", reminderWeb: "A daily reminder is part of the iPhone app. On the web, the app cannot wake itself up.",
     about: "About", aboutTitle: "Two books, one Bible",
     aboutText: `<p><em>Like a Father</em> and <em>As a Mother Comforts</em> are two thirty-one-day devotionals on the fathers and mothers of the Bible. Each day has a reading, a key verse, a word from the Hebrew or Greek, a short reflection, questions, a prayer, and one thing to do today. Both books rest on published biblical scholarship; the notes for each day, with the works behind it, are under "Notes and sources" at the end of the day, and the full list is under "Sources" in the library.</p>`,
+    help: "Help",
+    helpItems: `<details class="more" open><summary>The three tabs at the bottom</summary><ul>
+<li><strong>Today</strong>: the next reading of every plan you have started, and the day you opened last. Until you start a plan, it suggests where to begin.</li>
+<li><strong>Plans</strong>: seven reading plans. Start as many as you like; a plan waits where you left off. <em>Open</em> shows its readings, <em>Stop plan</em> takes it off Today.</li>
+<li><strong>Library</strong>: both books with all thirty-one days. At the top you switch between <em>Like a Father</em> and <em>As a Mother Comforts</em>; the buttons <em>Before you begin</em> and <em>Sources</em> sit under the book's title.</li>
+<li><strong>Settings and About</strong> are not in the bar: tap the gear at the top right of Today, Plans or Library.</li></ul></details>
+<details class="more"><summary>Reading a day</summary><ul>
+<li>At the top: the arrow goes back, the speaker (where available) reads the day aloud, <em>A−</em> and <em>A+</em> change the text size.</li>
+<li>At the end: <em>Notes and sources</em> opens the scholarship behind the day. <em>Mark as read</em> ticks the day; inside a plan, a button then leads to the next reading. The previous and next day are at the very bottom.</li></ul></details>
+<details class="more"><summary>Change the language</summary><ol>
+<li>Tap the gear at the top right.</li>
+<li>Under <em>Language</em>, choose <em>English</em> or <em>Deutsch</em>.</li></ol>
+<p>The app starts in your phone's language and reloads in the one you choose, with that language's books and recordings. Each language keeps its own reading marks and plans.</p></details>
+<details class="more"><summary>Listening and offline</summary><ul>
+<li>Tap the speaker at the top of a day. While it reads, tap a paragraph to jump there.</li>
+<li>Under <em>Read aloud</em> in Settings, <em>Read by</em> lets you choose a recorded narrator or this device's own voice, and <em>Speed</em> sets the pace.</li>
+<li>Under <em>On this device</em>, <em>Download</em> keeps a book's recordings on the phone for places without signal; <em>Remove the downloads</em> frees the space.</li></ul></details>
+<details class="more"><summary>Daily reminder</summary><p>Settings → <em>Reminder</em>: switch on <em>Daily reminder</em> and choose the time. It names the next reading in your plan. The reminder is part of the iPhone app; a web browser cannot wake itself up.</p></details>
+<details class="more"><summary>Text size and look</summary><p>Use <em>A−</em> and <em>A+</em> on any day, or Settings → <em>Appearance</em>: text size, font (serif or sans serif) and light or dark.</p></details>
+<details class="more"><summary>Your progress</summary><p><em>Mark as read</em> puts a tick next to the day in the Library. Your marks and plans are saved on this device, and the app collects no data. Settings → <em>Progress</em> → <em>Clear my progress</em> removes them all.</p></details>
+<details class="more"><summary>The logo</summary><p>Settings → scroll down to <em>About</em>. Under its first paragraph, <em>The logo</em> explains the letter and the two dots.</p></details>`,
     logoTitle: "The logo",
     logoText: `The letter <span lang="he" dir="rtl">א</span> (<em>aleph</em>) is the first letter of the Hebrew alphabet, and the first letter of both <span lang="he" dir="rtl">אב</span> (<em>ʾāb</em>), “father”, and <span lang="he" dir="rtl">אם</span> (<em>ʾēm</em>), “mother”. The two dots below it are the two books: green for <em>Like a Father</em>, pink for <em>As a Mother Comforts</em>. They stand side by side because neither comes first: read from left to right or from right to left, father and mother belong together.`,
     onIphone: "On your iPhone", iphoneSteps: `<li>Open this page in Safari.</li><li>Tap the Share button, then <strong>Add to Home Screen</strong>.</li><li>Open it from the home screen like any other app.</li>`,
@@ -377,6 +401,27 @@ const UI = {
     time: "Uhrzeit", reminderWeb: "Die tägliche Erinnerung gibt es in der iPhone-App. Im Web kann sich die App nicht selbst melden.",
     about: "Über", aboutTitle: "Zwei Bücher, eine Bibel",
     aboutText: `<p><em>Wie ein Vater</em> und <em>Wie eine Mutter tröstet</em> sind zwei Andachtsbücher mit je einunddreißig Tagen über die Väter und Mütter der Bibel. Jeder Tag hat einen Bibelabschnitt, einen Schlüsselvers, ein Wort aus dem Hebräischen oder Griechischen, eine kurze Betrachtung, Fragen, ein Gebet und eine Sache für heute. Beide Bücher stützen sich auf veröffentlichte Bibelwissenschaft; die Anmerkungen zu jedem Tag mit den Werken dahinter stehen unter „Anmerkungen und Quellen“ am Ende des Tages, die vollständige Liste unter „Quellen“ in der Bibliothek.</p>`,
+    help: "Hilfe",
+    helpItems: `<details class="more" open><summary>Die drei Bereiche unten</summary><ul>
+<li><strong>Heute</strong>: die nächste Andacht jedes Plans, den du begonnen hast, und der Tag, den du zuletzt geöffnet hast. Solange du keinen Plan begonnen hast, schlägt die App einen Anfang vor.</li>
+<li><strong>Pläne</strong>: sieben Lesepläne. Beginne so viele, wie du magst; ein Plan wartet, wo du aufgehört hast. <em>Öffnen</em> zeigt seine Andachten, <em>Plan beenden</em> nimmt ihn von „Heute“ weg.</li>
+<li><strong>Bibliothek</strong>: beide Bücher mit allen einunddreißig Tagen. Oben wechselst du zwischen <em>Wie ein Vater</em> und <em>Wie eine Mutter tröstet</em>; die Schaltflächen <em>Vorweg</em> und <em>Quellen</em> stehen unter dem Titel des Buches.</li>
+<li><strong>Einstellungen und „Über“</strong> sind nicht in der Leiste: Tippe oben rechts auf das Zahnrad, auf „Heute“, „Pläne“ oder „Bibliothek“.</li></ul></details>
+<details class="more"><summary>Eine Andacht lesen</summary><ul>
+<li>Oben: Der Pfeil geht zurück, der Lautsprecher (wo vorhanden) liest den Tag vor, <em>A−</em> und <em>A+</em> ändern die Schriftgröße.</li>
+<li>Am Ende: <em>Anmerkungen und Quellen</em> öffnet die Forschung hinter dem Tag. <em>Als gelesen markieren</em> hakt den Tag ab; in einem Plan führt danach eine Schaltfläche zur nächsten Andacht. Vorheriger und nächster Tag stehen ganz unten.</li></ul></details>
+<details class="more"><summary>Sprache wechseln</summary><ol>
+<li>Tippe oben rechts auf das Zahnrad.</li>
+<li>Wähle unter <em>Sprache</em> <em>English</em> oder <em>Deutsch</em>.</li></ol>
+<p>Die App startet in der Sprache deines Telefons und lädt sich in der gewählten Sprache neu, mit den Büchern und Lesungen dieser Sprache. Jede Sprache hat ihre eigenen Lesemarkierungen und Pläne.</p></details>
+<details class="more"><summary>Anhören und offline</summary><ul>
+<li>Tippe oben an einem Tag auf den Lautsprecher. Während es liest, springst du mit einem Tipp auf einen Absatz dorthin.</li>
+<li>Unter <em>Vorlesen</em> in den Einstellungen wählst du bei <em>Gelesen von</em> eine aufgenommene Sprecherstimme oder die Stimme dieses Geräts, und das <em>Tempo</em> stellt die Geschwindigkeit ein.</li>
+<li>Unter <em>Auf diesem Gerät</em> speichert <em>Laden</em> die Lesungen eines Buches auf dem Telefon, für Orte ohne Netz; <em>Geladene Lesungen entfernen</em> gibt den Platz wieder frei.</li></ul></details>
+<details class="more"><summary>Tägliche Erinnerung</summary><p>Einstellungen → <em>Erinnerung</em>: <em>Tägliche Erinnerung</em> einschalten und die Uhrzeit wählen. Sie nennt die nächste Andacht in deinem Plan. Die Erinnerung gibt es in der iPhone-App; im Browser kann sich die App nicht selbst melden.</p></details>
+<details class="more"><summary>Schriftgröße und Aussehen</summary><p>Nutze <em>A−</em> und <em>A+</em> an jedem Tag oder Einstellungen → <em>Darstellung</em>: Schriftgröße, Schrift (mit oder ohne Serifen) und hell oder dunkel.</p></details>
+<details class="more"><summary>Dein Fortschritt</summary><p><em>Als gelesen markieren</em> setzt in der Bibliothek einen Haken am Tag. Deine Markierungen und Pläne bleiben auf diesem Gerät, und die App sammelt keine Daten. Einstellungen → <em>Fortschritt</em> → <em>Meinen Fortschritt löschen</em> entfernt sie alle.</p></details>
+<details class="more"><summary>Das Logo</summary><p>Einstellungen → nach unten zu <em>Über</em>. Unter dem ersten Absatz erklärt <em>Das Logo</em> den Buchstaben und die zwei Punkte.</p></details>`,
     logoTitle: "Das Logo",
     logoText: `Der Buchstabe <span lang="he" dir="rtl">א</span> (<em>Aleph</em>) ist der erste Buchstabe des hebräischen Alphabets und der Anfang beider Wörter: <span lang="he" dir="rtl">אב</span> (<em>ʾāb</em>), „Vater“, und <span lang="he" dir="rtl">אם</span> (<em>ʾēm</em>), „Mutter“. Die zwei Punkte darunter sind die beiden Bücher: Grün für <em>Wie ein Vater</em>, Rosa für <em>Wie eine Mutter tröstet</em>. Sie stehen nebeneinander, denn keiner steht voran: von links nach rechts oder von rechts nach links gelesen, gehören Vater und Mutter zusammen.`,
     onIphone: "Auf deinem iPhone", iphoneSteps: `<li>Öffne diese Seite in Safari.</li><li>Tippe auf „Teilen“ und dann auf <strong>Zum Home-Bildschirm</strong>.</li><li>Öffne sie vom Home-Bildschirm aus wie jede andere App.</li>`,
@@ -1112,6 +1157,9 @@ function screenSettings(){
   const theme = S.theme || "system";
   return `<div class="readbar"><a class="iconbtn" href="#/today" aria-label="${UI.back}">${ICON.back}</a><span class="grow">${UI.settings}</span><span style="width:40px"></span></div>
   <header class="screen-head"><h1 class="screen-title">${UI.settings}</h1></header>
+
+  <div class="section-label">${UI.help}</div>
+  <div class="card help">${UI.helpItems}</div>
 
   <div class="section-label">${UI.language}</div>
   <div class="card" style="padding-block:4px">
