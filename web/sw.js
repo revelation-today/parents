@@ -10,7 +10,7 @@
   If this ever misbehaves, deploy a sw.js whose whole body is
   `self.registration.unregister()`.
 */
-const VERSION = 'acffd011bc09';
+const VERSION = '0beca038eb31';
 const CACHE = 'parents-' + VERSION;
 const FILES = [
   './', 'index.html', 'manifest.webmanifest', 'fonts/fonts.css',
