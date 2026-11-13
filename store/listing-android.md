@@ -323,9 +323,9 @@ schlechter angezeigt.
     • Like a Father — 31 days
     • As a Mother Comforts — 31 days
     • Teaching Your Children — 8 days
-    • When Parents Get It Wrong — 8 days
+    • When Parents Fall Short — 8 days
     • Grief and Loss — 7 days
-    • If a Parent Hurt You — 7 days
+    • What You Carry from Home — 7 days
 
     A plan never runs away from you. Miss a week, and it waits where you left off.
 
@@ -357,11 +357,10 @@ wertet Keyword-Stuffing als Richtlinienverstoß.
 
 ### App-Name [30]
 
-    Faithful parents
+    Treue Eltern im Glauben
 
-(Wie im App Store: Der Name bleibt englisch, weil er auch auf dem Home-Bildschirm so
-heißt. Möglich wäre auch ein deutscher Store-Name wie „Faithful parents – Andachten"
-(28 Zeichen); der Name unter dem Symbol auf dem Handy bleibt davon unberührt.)
+(Wie im App Store: Der Store-Name ist je Sprache übersetzt; der Name unter dem Symbol auf dem
+Handy bleibt „Faithful parents" (capacitor.config.json) und ist davon unberührt.)
 
 ### Kurzbeschreibung [80]
 
@@ -388,9 +387,9 @@ heißt. Möglich wäre auch ein deutscher Store-Name wie „Faithful parents –
     • Wie ein Vater – 31 Tage
     • Wie eine Mutter tröstet – 31 Tage
     • Deine Kinder lehren – 8 Tage
-    • Wenn Eltern Fehler machen – 8 Tage
+    • Wenn Eltern an Grenzen stoßen – 8 Tage
     • Trauer und Verlust – 7 Tage
-    • Wenn Vater oder Mutter dir wehgetan haben – 7 Tage
+    • Was du von zu Hause mitträgst – 7 Tage
 
     Kein Plan läuft dir davon. Verpasst du eine Woche, wartet er dort, wo du aufgehört hast.
 
@@ -419,7 +418,7 @@ leer lassen (Play zeigt dann die englischen).
 
 ### App-Name [30]
 
-    Faithful parents
+    Padres fieles
 
 ### Kurzbeschreibung [80]
 
@@ -446,9 +445,9 @@ leer lassen (Play zeigt dann die englischen).
     • Como un padre — 31 días
     • Como una madre consuela — 31 días
     • Enseñar a tus hijos — 8 días
-    • Cuando los padres se equivocan — 8 días
+    • Cuando los padres se quedan cortos — 8 días
     • Duelo y pérdida — 7 días
-    • Si un padre o una madre te hizo daño — 7 días
+    • Lo que llevas de tu hogar — 7 días
 
     Un plan nunca se te escapa. Si dejas pasar una semana, te espera donde lo dejaste.
 
@@ -471,7 +470,7 @@ leer lassen (Play zeigt dann die englischen).
 
 ### App-Name [30]
 
-    Faithful parents
+    Parents fidèles
 
 ### Kurzbeschreibung [80]
 
@@ -498,9 +497,9 @@ leer lassen (Play zeigt dann die englischen).
     • Comme un père — 31 jours
     • Comme une mère console — 31 jours
     • Enseigner tes enfants — 8 jours
-    • Quand les parents se trompent — 8 jours
+    • Quand les parents n'y arrivent pas — 8 jours
     • Deuil et perte — 7 jours
-    • Si un parent t’a fait du mal — 7 jours
+    • Ce que tu portes de ton foyer — 7 jours
 
     Un plan ne te file jamais entre les doigts. Si tu laisses passer une semaine, il t’attend là où tu t’es arrêté.
 
@@ -523,7 +522,7 @@ leer lassen (Play zeigt dann die englischen).
 
 ### App-Name [30]
 
-    Faithful parents
+    Pais fiéis
 
 ### Kurzbeschreibung [80]
 
@@ -550,9 +549,9 @@ leer lassen (Play zeigt dann die englischen).
     • Como um pai — 31 dias
     • Como uma mãe consola — 31 dias
     • Ensinar seus filhos — 8 dias
-    • Quando os pais erram — 8 dias
+    • Quando os pais ficam aquém — 8 dias
     • Luto e perda — 7 dias
-    • Se um pai ou uma mãe feriu você — 7 dias
+    • O que você carrega do seu lar — 7 dias
 
     Um plano nunca foge de você. Se passar uma semana, ele espera onde você parou.
 
@@ -575,7 +574,7 @@ leer lassen (Play zeigt dann die englischen).
 
 ### App-Name [30]
 
-    Faithful parents
+    Sadık Ebeveynler
 
 ### Kurzbeschreibung [80]
 
@@ -602,9 +601,9 @@ leer lassen (Play zeigt dann die englischen).
     • Bir Baba Gibi — 31 gün
     • Bir Anne Avuttuğu Gibi — 31 gün
     • Çocuklarına öğretmek — 8 gün
-    • Anne babalar hata yaptığında — 8 gün
+    • Anne babalar yetersiz kaldığında — 8 gün
     • Yas ve kayıp — 7 gün
-    • Bir ebeveyn seni incittiyse — 7 gün
+    • Evinden taşıdıkların — 7 gün
 
     Bir plan senden hiç kaçmaz. Bir hafta kaçırırsan, kaldığın yerde bekler.
 
@@ -627,7 +626,7 @@ leer lassen (Play zeigt dann die englischen).
 
 ### App-Name [30]
 
-    Faithful parents
+    Верные родители
 
 ### Kurzbeschreibung [80]
 
@@ -654,9 +653,9 @@ leer lassen (Play zeigt dann die englischen).
     • Как отец — 31 день
     • Как утешает мать — 31 день
     • Учить своих детей — 8 дней
-    • Когда родители ошибаются — 8 дней
+    • Когда родители не справляются — 8 дней
     • Горе и утрата — 7 дней
-    • Если родитель причинил тебе боль — 7 дней
+    • То, что ты несёшь из родного дома — 7 дней
 
     План никогда не убегает от вас. Пропустите неделю — он ждёт там, где вы остановились.
 
@@ -679,7 +678,7 @@ leer lassen (Play zeigt dann die englischen).
 
 ### App-Name [30]
 
-    Faithful parents
+    신실한 부모
 
 ### Kurzbeschreibung [80]
 
@@ -706,9 +705,9 @@ leer lassen (Play zeigt dann die englischen).
     • 아버지처럼 — 31일
     • 어머니가 위로하듯 — 31일
     • 자녀를 가르치기 — 8일
-    • 부모가 잘못할 때 — 8일
+    • 부모가 부족할 때 — 8일
     • 슬픔과 상실 — 7일
-    • 부모에게 상처받았다면 — 7일
+    • 집에서 안고 온 것들 — 7일
 
     계획은 결코 당신을 앞서 달아나지 않습니다. 한 주를 건너뛰어도 멈춘 자리에서 기다립니다.
 
@@ -731,7 +730,7 @@ leer lassen (Play zeigt dann die englischen).
 
 ### App-Name [30]
 
-    Faithful parents
+    Cha mẹ trung tín
 
 ### Kurzbeschreibung [80]
 
@@ -758,9 +757,9 @@ leer lassen (Play zeigt dann die englischen).
     • Như một người cha — 31 ngày
     • Như người mẹ ủi an — 31 ngày
     • Dạy dỗ con cái — 8 ngày
-    • Khi cha mẹ lầm lỗi — 8 ngày
+    • Khi cha mẹ chưa làm tròn — 8 ngày
     • Đau buồn và mất mát — 7 ngày
-    • Nếu cha hoặc mẹ đã làm bạn tổn thương — 7 ngày
+    • Điều bạn mang theo từ mái nhà — 7 ngày
 
     Kế hoạch không bao giờ bỏ rơi bạn. Nếu một tuần trôi qua, nó vẫn chờ ở chỗ bạn dừng lại.
 
@@ -783,7 +782,7 @@ leer lassen (Play zeigt dann die englischen).
 
 ### App-Name [30]
 
-    Faithful parents
+    Orang Tua Setia
 
 ### Kurzbeschreibung [80]
 
@@ -810,9 +809,9 @@ leer lassen (Play zeigt dann die englischen).
     • Seperti Seorang Bapa — 31 hari
     • Seperti Ibu yang Menghibur — 31 hari
     • Mengajar anak-anak Anda — 8 hari
-    • Ketika orang tua keliru — 8 hari
+    • Ketika orang tua belum mampu — 8 hari
     • Duka dan kehilangan — 7 hari
-    • Jika ayah atau ibu pernah melukai Anda — 7 hari
+    • Yang Anda bawa dari rumah — 7 hari
 
     Sebuah rencana tidak pernah meninggalkan Anda. Jika seminggu terlewat, rencana itu menunggu di tempat Anda berhenti.
 

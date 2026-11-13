@@ -7,7 +7,7 @@ Die App gibt es **auf zehn Sprachen**: Englisch (*Like a Father* / *As a Mother 
 Deutsch (*Wie ein Vater* / *Wie eine Mutter tröstet*), Spanisch, Französisch, Portugiesisch,
 Türkisch, Russisch, Koreanisch, Vietnamesisch und Indonesisch. Sie folgt der Sprache des Geräts und lässt sich unter
 *About/Über* umstellen. Die Primärsprache des Eintrags bleibt Englisch (UK); der deutsche
-Eintrag (Teil 3) und die sechs weiteren (Teil 3b) beschreiben die jeweilige Ausgabe.
+Eintrag (Teil 3) und die acht weiteren (Teil 3b) beschreiben die jeweilige Ausgabe.
 
 ---
 
@@ -25,7 +25,7 @@ Eintrag (Teil 3) und die sechs weiteren (Teil 3b) beschreiben die jeweilige Ausg
 
 Die App enthält Inhalte Dritter: in der englischen Ausgabe Bibelzitate aus der New
 International Version (Anglicised). Alle anderen Ausgaben (Deutsch, Spanisch, Französisch,
-Portugiesisch, Türkisch, Russisch, Koreanisch) zitieren nur eigene Übersetzungen des Autors und
+Portugiesisch, Türkisch, Russisch, Koreanisch, Vietnamesisch, Indonesisch) zitieren nur eigene Übersetzungen des Autors und
 enthalten keine Inhalte Dritter. Antwort:
 
     Ja — die App enthält, zeigt oder greift auf Inhalte Dritter zu,
@@ -84,7 +84,7 @@ HTTPS beim optionalen Link).
     Datenschutzrichtlinie-URL: https://revelation-today.github.io/parents/privacy.html
                                (je Sprache …/parents/privacy-<code>.html, z. B. privacy-de.html,
                                privacy-es.html, privacy-fr.html, privacy-pt.html, privacy-tr.html,
-                               privacy-ru.html, privacy-ko.html — die deutsche Fassung ist die
+                               privacy-ru.html, privacy-ko.html, privacy-vi.html, privacy-id.html — die deutsche Fassung ist die
                                rechtlich verbindliche; erzeugt mit tools/app/make_privacy.py)
     Datenerfassung:            „Es werden keine Daten von dieser App erfasst."
 
@@ -97,12 +97,12 @@ HTTPS beim optionalen Link).
 
     This is a self-contained reading app, not a wrapper around a website.
 
-    • All text — two complete 31-day devotionals, 62 readings, in English, German, Spanish, French, Portuguese, Turkish, Russian and Korean — is
+    • All text — two complete 31-day devotionals, 62 readings, in English, German, Spanish, French, Portuguese, Turkish, Russian, Korean, Vietnamese and Indonesian — is
       bundled in the app. It works with the device in airplane mode; please feel free to test it
       that way. The app follows the device language; About → Language switches it.
     • Read aloud: recorded narration is streamed from the app's own website
       (revelation-today.github.io/parents) and can be downloaded for offline listening; without
-      a connection the app reads with the device's built-in voice. Recorded narration exists in all eight languages (it is streamed from the app's own website and can be downloaded); the device voice is the fallback.
+      a connection the app reads with the device's built-in voice. Recorded narration exists in eight of the ten languages (not Vietnamese or Indonesian); the device voice is the fallback and the only voice in those two.
     • The app has no accounts and no server. Reading plans, progress, marked days and
       text size are stored on the device.
     • The only outbound link is optional: on each day, "Read <passage>" opens that Bible
@@ -132,7 +132,7 @@ HTTPS beim optionalen Link).
     04-library   die Bibliothek (As a Mother Comforts)
     05-dark      ein Tag im Dunkelmodus
 
-    Die Screenshots zeigen die englische App. Für die sechs neuen Sprachen gilt dasselbe
+    Die Screenshots zeigen die englische App. Für alle weiteren Sprachen gilt dasselbe
     (leer lassen = Screenshots der Primärsprache). Für den deutschen Eintrag sind deutsche
     Screenshots besser; make_screenshots.py kann sie erzeugen, wenn es die Sprache „de"
     setzt (noch nicht eingebaut). Lässt man sie bei einer Sprache leer, zeigt der Store
@@ -175,9 +175,9 @@ HTTPS beim optionalen Link).
     • Like a Father — 31 days
     • As a Mother Comforts — 31 days
     • Teaching Your Children — 8 days
-    • When Parents Get It Wrong — 8 days
+    • When Parents Fall Short — 8 days
     • Grief and Loss — 7 days
-    • If a Parent Hurt You — 7 days
+    • What You Carry from Home — 7 days
 
     A plan never runs away from you. Miss a week, and it waits where you left off.
 
@@ -193,7 +193,7 @@ HTTPS beim optionalen Link).
 
     Both devotionals rest on published biblical scholarship, and the notes name the works behind each day.
 
-    Also in German: Wie ein Vater and Wie eine Mutter tröstet. The app follows your device's language.
+    Also in German (Wie ein Vater, Wie eine Mutter tröstet), Spanish, French, Portuguese, Turkish, Russian, Korean, Vietnamese and Indonesian. The app follows your device's language.
 
     Scripture quotations marked NIV are taken from the Holy Bible, New International Version (Anglicised edition). Copyright © 1979, 1984, 2011 by Biblica. Used by permission of Hodder & Stoughton Ltd, an Hachette UK company. All rights reserved. 'NIV' is a registered trademark of Biblica. UK trademark number 1448790.
 
@@ -218,12 +218,12 @@ HTTPS beim optionalen Link).
 # Teil 3 — Deutsch
 
 Die App ist auf Deutsch vollständig: beide Bücher, alle 62 Tage, die Lesepläne und die
-Vorlesefunktion. Der Name bleibt „Faithful parents", weil er auch auf dem Home-Bildschirm
-so heißt; Untertitel und Beschreibung sind deutsch und nennen die deutschen Buchtitel.
+Vorlesefunktion. Der Store-Name ist „Treue Eltern im Glauben"; der Name unter dem Symbol auf dem Handy bleibt
+„Faithful parents" (capacitor.config.json). Untertitel und Beschreibung sind deutsch und nennen die deutschen Buchtitel.
 
 ## Name [30]
 
-    Faithful parents
+    Treue Eltern im Glauben
 
 ## Untertitel [30]
 
@@ -231,7 +231,7 @@ so heißt; Untertitel und Beschreibung sind deutsch und nennen die deutschen Buc
 
 ## Werbetext [170]
 
-    Zwei Andachtsbücher über die Väter und Mütter der Bibel, je 31 Tage – mit Leseplänen, dem hebräischen Wort des Tages, Quellen und Vorlesen. Auf Deutsch und Englisch.
+    Zwei Andachtsbücher über die Väter und Mütter der Bibel, je 31 Tage – mit Leseplänen, dem hebräischen Wort des Tages, Quellen und Vorlesen. In zehn Sprachen.
 
 ## Beschreibung [4000]
 
@@ -254,9 +254,9 @@ so heißt; Untertitel und Beschreibung sind deutsch und nennen die deutschen Buc
     • Wie ein Vater – 31 Tage
     • Wie eine Mutter tröstet – 31 Tage
     • Deine Kinder lehren – 8 Tage
-    • Wenn Eltern Fehler machen – 8 Tage
+    • Wenn Eltern an Grenzen stoßen – 8 Tage
     • Trauer und Verlust – 7 Tage
-    • Wenn Vater oder Mutter dir wehgetan haben – 7 Tage
+    • Was du von zu Hause mitträgst – 7 Tage
 
     Kein Plan läuft dir davon. Verpasst du eine Woche, wartet er dort, wo du aufgehört hast.
 
@@ -273,7 +273,7 @@ so heißt; Untertitel und Beschreibung sind deutsch und nennen die deutschen Buc
     • Die Texte funktionieren vollständig offline. Keine Anmeldung, kein Konto, keine Werbung.
     • Dein Lesefortschritt bleibt auf deinem Gerät.
     • Hell und dunkel, und Text, den du größer stellen kannst.
-    • Deutsch und Englisch – die App folgt der Sprache deines Geräts und lässt sich umstellen.
+    • Auch auf Englisch, Spanisch, Französisch, Portugiesisch, Türkisch, Russisch, Koreanisch, Vietnamesisch und Indonesisch – die App folgt der Sprache deines Geräts und lässt sich umstellen.
 
     Beide Bücher stützen sich auf veröffentlichte Bibelwissenschaft; die Anmerkungen nennen die Werke hinter jedem Tag. Die Bibelzitate der deutschen Ausgabe sind eigene Übersetzungen aus dem Hebräischen und Griechischen.
 
@@ -281,7 +281,7 @@ so heißt; Untertitel und Beschreibung sind deutsch und nennen die deutschen Buc
 
     andacht,bibel,väter,mütter,eltern,leseplan,christlich,gebet,familie,glaube,hörbuch,vorlesen
 
-Der Name der App („Faithful parents") und der Untertitel werden von der Suche
+Der Name der App („Treue Eltern im Glauben") und der Untertitel werden von der Suche
 ohnehin erfasst — sie gehören nicht in die Schlüsselbegriffe. „vaterschaft" und
 „hebräisch" sind für „hörbuch" und „vorlesen" gewichen: Wer eine Andacht zum
 Hören sucht, findet die App jetzt auch.
@@ -309,27 +309,32 @@ Wenn schon eine Version im Store ist:
 # Teil 3b — Die weiteren Sprachen (es, fr, pt, tr, ru, ko, vi, id)
 
 Die App ist seit 1.1 (oder der Version, die sie zuerst enthält) auch auf Spanisch, Französisch,
-Portugiesisch, Türkisch, Russisch und Koreanisch vollständig: beide Bücher, alle 62 Tage, Quiz,
-Lesepläne, Oberfläche. Der Name bleibt überall „Faithful parents". Alle Bibelzitate sind
+Portugiesisch, Türkisch, Russisch, Koreanisch, Vietnamesisch und Indonesisch vollständig: beide Bücher, alle 62 Tage, Quiz,
+Lesepläne, Oberfläche. Der Store-Name ist je Sprache übersetzt (unter „Name" jedes Abschnitts); der Name unter dem Symbol auf dem Handy bleibt überall „Faithful parents". Alle Bibelzitate sind
 eigene Übersetzungen des Autors aus dem Hebräischen und Griechischen (keine Inhalte Dritter).
 
-**Vorlesen:** Für alle sechs Sprachen gibt es seit November 2026 eine **aufgenommene Lesung**
+**Vorlesen:** Für es, fr, pt, ru, tr und ko gibt es seit November 2026 eine **aufgenommene Lesung**
 (es, pt: Kokoro „Dora"; fr: Kokoro „Siwis"; ru: Piper „Dmitri", CC0; tr: Piper „dfki" und
 ko: Piper „kss" — beide CC BY-NC-SA 4.0, nur nicht-kommerziell: die App muss kostenlos und
-werbefrei bleiben und nennt die Quellen unter *About*).
+werbefrei bleiben und nennt die Quellen unter *About*). Vietnamesisch und Indonesisch
+haben keine aufgenommene Lesung, nur die Stimme des Geräts.
 
 **Vor der Einreichung:** Die Texte sind maschinell übersetzt und noch von keiner
 Muttersprachlerin und keinem Muttersprachler gegengelesen. Beschreibung und Schlüsselbegriffe
 ebenso — bitte vor dem Absenden jede Sprache einmal prüfen lassen.
 
 Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Portugiesisch (Brasilien)*,
-*Türkisch*, *Russisch*, *Koreanisch*. (Wer Spanisch für Lateinamerika möchte, fügt zusätzlich
+*Türkisch*, *Russisch*, *Koreanisch*, *Vietnamesisch*, *Indonesisch*. (Wer Spanisch für Lateinamerika möchte, fügt zusätzlich
 *Spanisch (Mexiko)* mit demselben Text hinzu.) Datenschutz-URL je Sprache:
-`https://revelation-today.github.io/parents/privacy-<es|fr|pt|tr|ru|ko>.html`.
+`https://revelation-today.github.io/parents/privacy-<es|fr|pt|tr|ru|ko|vi|id>.html`.
 
 ---
 
 ## Spanisch (es)
+
+### Name [30]
+
+    Padres fieles
 
 ### Untertitel [30]
 
@@ -337,7 +342,7 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 
 ### Werbetext [170]
 
-    Dos devocionales de treinta y un días sobre los padres y las madres de la Biblia, con planes de lectura, la palabra hebrea del día, fuentes y lectura en voz alta con voz grabada.
+    Dos devocionales de treinta y un días sobre los padres y las madres de la Biblia, con planes de lectura, la palabra hebrea del día, fuentes y lectura en voz alta.
 
 ### Beschreibung [4000]
 
@@ -360,9 +365,9 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • Como un padre — 31 días
     • Como una madre consuela — 31 días
     • Enseñar a tus hijos — 8 días
-    • Cuando los padres se equivocan — 8 días
+    • Cuando los padres se quedan cortos — 8 días
     • Duelo y pérdida — 7 días
-    • Si un padre o una madre te hizo daño — 7 días
+    • Lo que llevas de tu hogar — 7 días
 
     Un plan nunca se te escapa. Si dejas pasar una semana, te espera donde lo dejaste.
 
@@ -388,6 +393,10 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 ---
 
 ## Französisch (fr)
+
+### Name [30]
+
+    Parents fidèles
 
 ### Untertitel [30]
 
@@ -418,9 +427,9 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • Comme un père — 31 jours
     • Comme une mère console — 31 jours
     • Enseigner tes enfants — 8 jours
-    • Quand les parents se trompent — 8 jours
+    • Quand les parents n'y arrivent pas — 8 jours
     • Deuil et perte — 7 jours
-    • Si un parent t’a fait du mal — 7 jours
+    • Ce que tu portes de ton foyer — 7 jours
 
     Un plan ne te file jamais entre les doigts. Si tu laisses passer une semaine, il t’attend là où tu t’es arrêté.
 
@@ -446,6 +455,10 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 ---
 
 ## Portugiesisch (pt, Brasilien)
+
+### Name [30]
+
+    Pais fiéis
 
 ### Untertitel [30]
 
@@ -476,9 +489,9 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • Como um pai — 31 dias
     • Como uma mãe consola — 31 dias
     • Ensinar seus filhos — 8 dias
-    • Quando os pais erram — 8 dias
+    • Quando os pais ficam aquém — 8 dias
     • Luto e perda — 7 dias
-    • Se um pai ou uma mãe feriu você — 7 dias
+    • O que você carrega do seu lar — 7 dias
 
     Um plano nunca foge de você. Se passar uma semana, ele espera onde você parou.
 
@@ -505,6 +518,10 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 
 ## Türkisch (tr)
 
+### Name [30]
+
+    Sadık Ebeveynler
+
 ### Untertitel [30]
 
     Ebeveynler için günlük okuma
@@ -517,7 +534,7 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 
     Tek uygulamada otuz bir günlük iki kitap: Kutsal Kitap’ın babalarını anlatan Bir Baba Gibi ve annelerini anlatan Bir Anne Avuttuğu Gibi. Birini oku, ötekini oku ya da ikisini yan yana oku.
 
-    Kutsal Kitap’ın ebeveynleri bir kahramanlar galerisi değildir. İbrahim oğlunun üzerine bıçağı kaldırır. Eli oğullarını engellemez. Davut çok geç ağlar. Sara bir cariyeyi çöle sürer; Rebeka kocasını aldatır; Rahel ile Lea çocuklarının adları üzerinden çekişir. Yanlarında dua eden Hanna; ölü oğullarını aylarca bekleyen Rispa; küçük bir sepet yapan Yokebed; denetleyemediği çocukları için dua eden Eyüp; “nasıl” diye soran Manoah; ve Luka 15’teki, koşan baba durur.
+    Kutsal Kitap’ın ebeveynleri bir kahramanlar galerisi değildir. İbrahim oğlunun üzerine bıçağı kaldırır. Eli oğullarını engellemez. Davut çok geç ağlar. Sara bir cariyeyi çöle sürer; Rebeka kocasını aldatır; Rahel ile Lea çocuklarının adları üzerinden çekişir. Yanlarında dua eden Hanna; ölü oğullarını aylarca bekleyen Rispa; küçük bir sepet yapan Yokebed; denetleyemediği çocukları için dua eden Eyüp; “nasıl” diye soran Manoah; ve Luka 15’teki koşan baba.
 
     Her gün şunları getirir:
 
@@ -534,9 +551,9 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • Bir Baba Gibi — 31 gün
     • Bir Anne Avuttuğu Gibi — 31 gün
     • Çocuklarına öğretmek — 8 gün
-    • Anne babalar hata yaptığında — 8 gün
+    • Anne babalar yetersiz kaldığında — 8 gün
     • Yas ve kayıp — 7 gün
-    • Bir ebeveyn seni incittiyse — 7 gün
+    • Evinden taşıdıkların — 7 gün
 
     Bir plan senden hiç kaçmaz. Bir hafta kaçırırsan, kaldığın yerde bekler.
 
@@ -562,6 +579,10 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 ---
 
 ## Russisch (ru)
+
+### Name [30]
+
+    Верные родители
 
 ### Untertitel [30]
 
@@ -592,9 +613,9 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • Как отец — 31 день
     • Как утешает мать — 31 день
     • Учить своих детей — 8 дней
-    • Когда родители ошибаются — 8 дней
+    • Когда родители не справляются — 8 дней
     • Горе и утрата — 7 дней
-    • Если родитель причинил тебе боль — 7 дней
+    • То, что ты несёшь из родного дома — 7 дней
 
     План никогда не убегает от вас. Пропустите неделю — он ждёт там, где вы остановились.
 
@@ -605,7 +626,7 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     СОЗДАНО ДЛЯ ЧТЕНИЯ
 
     • Работает полностью без сети. Без входа, без аккаунта, без рекламы.
-    • Твой прогресс чтения остаётся на вашем устройстве.
+    • Ваш прогресс чтения остаётся на вашем устройстве.
     • Светлая и тёмная темы, текст можно увеличить.
     • Каждый день можно прослушать в записи или голосом вашего устройства; записи можно скачать для прослушивания без сети.
 
@@ -620,6 +641,10 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 ---
 
 ## Koreanisch (ko)
+
+### Name [30]
+
+    신실한 부모
 
 ### Untertitel [30]
 
@@ -650,15 +675,15 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • 아버지처럼 — 31일
     • 어머니가 위로하듯 — 31일
     • 자녀를 가르치기 — 8일
-    • 부모가 잘못할 때 — 8일
+    • 부모가 부족할 때 — 8일
     • 슬픔과 상실 — 7일
-    • 부모에게 상처받았다면 — 7일
+    • 집에서 안고 온 것들 — 7일
 
     계획은 결코 당신을 앞서 달아나지 않습니다. 한 주를 건너뛰어도 멈춘 자리에서 기다립니다.
 
     어려운 대목도 정직하게
 
-    이 책들은 사람들이 어렵게 여기는 본문을 건너뛰지 않습니다. 잠언의 매 이야기, 딸들, 해를 끼친 아버지들, 그리고 자기 부모에게 상처받은 독자들을 다룹니다. 학자들의 견해가 갈리는 곳은 주석이 그렇게 밝힙니다.
+    이 책들은 사람들이 어렵게 여기는 본문을 건너뛰지 않습니다. 잠언의 매에 관한 말씀, 딸들, 해를 끼친 아버지들, 그리고 자기 부모에게 상처받은 독자들을 다룹니다. 학자들의 견해가 갈리는 곳은 주석이 그렇게 밝힙니다.
 
     읽기 위해 만들었습니다
 
@@ -679,13 +704,17 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 
 ## Vietnamesisch (vi)
 
+### Name [30]
+
+    Cha mẹ trung tín
+
 ### Untertitel [30]
 
     Suy niệm cho cha và mẹ
 
 ### Werbetext [170]
 
-    Hai cuốn sách suy niệm ba mươi mốt ngày về những người cha và người mẹ trong Kinh Thánh: kế hoạch đọc, từ Hê-bơ-rơ của ngày, nguồn tham khảo và bản đọc thu âm.
+    Hai cuốn sách suy niệm ba mươi mốt ngày về những người cha và người mẹ trong Kinh Thánh: kế hoạch đọc, từ Hê-bơ-rơ của ngày, nguồn tham khảo và đọc thành tiếng.
 
 ### Beschreibung [4000]
 
@@ -708,9 +737,9 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • Như một người cha — 31 ngày
     • Như người mẹ ủi an — 31 ngày
     • Dạy dỗ con cái — 8 ngày
-    • Khi cha mẹ lầm lỗi — 8 ngày
+    • Khi cha mẹ chưa làm tròn — 8 ngày
     • Đau buồn và mất mát — 7 ngày
-    • Nếu cha hoặc mẹ đã làm bạn tổn thương — 7 ngày
+    • Điều bạn mang theo từ mái nhà — 7 ngày
 
     Kế hoạch không bao giờ bỏ rơi bạn. Nếu một tuần trôi qua, nó vẫn chờ ở chỗ bạn dừng lại.
 
@@ -723,7 +752,7 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • Hoạt động hoàn toàn khi không có mạng. Không đăng nhập, không tài khoản, không quảng cáo.
     • Tiến trình đọc của bạn nằm trên thiết bị của bạn.
     • Nền sáng và tối, và chữ có thể phóng to.
-    • Có thể đọc thành tiếng từng ngày, bằng giọng thu âm sẵn hoặc giọng của thiết bị; các bản đọc có thể tải xuống để nghe khi không có mạng.
+    • Có thể đọc thành tiếng từng ngày bằng giọng của thiết bị.
 
     Hai cuốn sách suy niệm này dựa trên các nghiên cứu Kinh Thánh đã được công bố, và phần ghi chú nêu các công trình đứng sau từng ngày. Các đoạn trích Kinh Thánh trong bản tiếng Việt là bản dịch riêng của tác giả từ tiếng Hê-bơ-rơ và tiếng Hy Lạp.
 
@@ -736,6 +765,10 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
 ---
 
 ## Indonesisch (id)
+
+### Name [30]
+
+    Orang Tua Setia
 
 ### Untertitel [30]
 
@@ -766,9 +799,9 @@ Store-Sprachen in App Store Connect: *Spanisch (Spanien)*, *Französisch*, *Port
     • Seperti Seorang Bapa — 31 hari
     • Seperti Ibu yang Menghibur — 31 hari
     • Mengajar anak-anak Anda — 8 hari
-    • Ketika orang tua keliru — 8 hari
+    • Ketika orang tua belum mampu — 8 hari
     • Duka dan kehilangan — 7 hari
-    • Jika ayah atau ibu pernah melukai Anda — 7 hari
+    • Yang Anda bawa dari rumah — 7 hari
 
     Sebuah rencana tidak pernah meninggalkan Anda. Jika seminggu terlewat, rencana itu menunggu di tempat Anda berhenti.
 
@@ -822,6 +855,6 @@ Sprachen hängen an zwei Stellen, und beide müssen gefüllt werden:
   Schlüsselbegriffe findet niemand die App mit „Andacht" oder „Leseplan".
 - Eine Sprache lässt sich vor der Einreichung wieder entfernen (im selben Menü);
   ist die Version veröffentlicht, geht das erst mit der nächsten Version.
-- Weitere Sprachen später (z. B. Indonesisch, Arabisch) laufen genauso; die sechs aus Teil 3b ebenfalls. Sinnvoll
+- Weitere Sprachen später (z. B. Arabisch) laufen genauso; die acht aus Teil 3b ebenfalls. Sinnvoll
   ist das erst, wenn die Texte der App selbst in der Sprache vorliegen – wie jetzt beim
   Deutschen.
