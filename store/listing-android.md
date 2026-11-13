@@ -6,11 +6,12 @@ App-Store-Eintrag steht, steht er hier trotzdem vollständig — Play hat andere
 (z. B. Kurzbeschreibung 80 statt Werbetext 170), und so lässt sich jedes Feld direkt
 kopieren.
 
-Die App ist dieselbe wie auf dem iPhone: **Englisch und Deutsch**, *Like a Father* /
-*As a Mother Comforts* und *Wie ein Vater* / *Wie eine Mutter tröstet*. Sie folgt der
+Die App ist dieselbe wie auf dem iPhone: **acht Sprachen** — Englisch (*Like a Father* /
+*As a Mother Comforts*), Deutsch (*Wie ein Vater* / *Wie eine Mutter tröstet*), Spanisch,
+Französisch, Portugiesisch, Türkisch, Russisch, Koreanisch. Sie folgt der
 Sprache des Geräts und lässt sich unter *About/Über* umstellen. Standardsprache des
-Eintrags: **Englisch (Vereinigtes Königreich) – en-GB**; Deutsch kommt als Übersetzung
-dazu (Teil 4).
+Eintrags: **Englisch (Vereinigtes Königreich) – en-GB**; Deutsch und die sechs weiteren Sprachen kommen als
+Übersetzungen dazu (Teil 4).
 
 Reihenfolge der Arbeit:
 
@@ -175,7 +176,8 @@ Jeder Punkt muss einmal beantwortet werden, sonst lässt sich nichts einreichen.
     https://revelation-today.github.io/parents/privacy.html
 
 Play kennt nur eine URL pro App (nicht pro Sprache). Die englische Seite verweist oben
-auf die deutsche, rechtlich verbindliche Fassung (`privacy-de.html`), und beide nennen
+auf die deutsche, rechtlich verbindliche Fassung (`privacy-de.html`) und auf die Übersetzungen
+(`privacy-es/fr/pt/tr/ru/ko.html`, erzeugt mit `tools/app/make_privacy.py`), und alle nennen
 jetzt die Android-App bei der Erinnerung. Vor dem Einreichen einmal über *Deploy web app
 to Pages* neu veröffentlichen, damit die geänderte Fassung online ist.
 
@@ -340,7 +342,7 @@ schlechter angezeigt.
     • The texts work completely offline. Nothing to sign in to, no account, no advertising.
     • Your reading progress stays on your device.
     • Light and dark, and text you can make bigger.
-    • English and German — the app follows your phone's language, and you can switch it.
+    • English, German, Spanish, French, Portuguese, Turkish, Russian and Korean — the app follows your phone's language, and you can switch it.
 
     Both devotionals rest on published biblical scholarship, and the notes name the works behind each day.
 
@@ -405,11 +407,327 @@ heißt. Möglich wäre auch ein deutscher Store-Name wie „Faithful parents –
     • Die Texte funktionieren vollständig offline. Keine Anmeldung, kein Konto, keine Werbung.
     • Dein Lesefortschritt bleibt auf deinem Gerät.
     • Hell und dunkel, und Text, den du größer stellen kannst.
-    • Deutsch und Englisch – die App folgt der Sprache deines Geräts und lässt sich umstellen.
+    • Acht Sprachen (Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Türkisch, Russisch, Koreanisch) – die App folgt der Sprache deines Geräts und lässt sich umstellen.
 
     Beide Bücher stützen sich auf veröffentlichte Bibelwissenschaft; die Anmerkungen nennen die Werke hinter jedem Tag. Die Bibelzitate der deutschen Ausgabe sind eigene Übersetzungen aus dem Hebräischen und Griechischen.
 
-## So kommt Deutsch dazu
+Die sechs folgenden Sprachen haben eine aufgenommene Lesung (Näheres in `listing.md`, Teil 3b). Alle Texte sind maschinell
+übersetzt — vor dem Einreichen von Muttersprachlern prüfen lassen. Grafiken und Screenshots:
+leer lassen (Play zeigt dann die englischen).
+
+## Spanisch (Spanien) – es-ES
+
+### App-Name [30]
+
+    Faithful parents
+
+### Kurzbeschreibung [80]
+
+    Dos devocionales de 31 días sobre los padres y las madres de la Biblia.
+
+### Vollständige Beschreibung [4000]
+
+    Dos devocionales de treinta y un días en una sola app: Como un padre, sobre los padres de la Biblia, y Como una madre consuela, sobre sus madres. Lee uno, lee el otro, o léelos juntos.
+
+    Los padres de la Biblia no son una galería de héroes. Abraham levanta el cuchillo sobre su hijo. Elí no frena a los suyos. David llora demasiado tarde. Sara empuja a una esclava al desierto; Rebeca engaña a su marido; Raquel y Lea libran su rivalidad con los nombres de sus hijos. Junto a ellos están Ana, que oró; Rizpa, que guardó a sus hijos muertos durante meses; Jocabed, que construyó un pequeño arca; Job, que oró por hijos a los que no podía controlar; Manoa, que preguntó cómo; y el padre de Lucas 15, que corrió.
+
+    Cada día trae:
+
+    • una lectura breve de la Biblia y un versículo clave
+    • una palabra del hebreo o del griego, con lo que significa
+    • una página en lenguaje claro sobre un padre o una madre
+    • dos preguntas para pensar
+    • una oración y algo que hacer hoy
+    • notas y fuentes, si quieres comprobar el terreno que pisa cada día
+
+    SIETE PLANES DE LECTURA
+
+    • Lado a lado — los dos libros juntos, 31 días
+    • Como un padre — 31 días
+    • Como una madre consuela — 31 días
+    • Enseñar a tus hijos — 8 días
+    • Cuando los padres se equivocan — 8 días
+    • Duelo y pérdida — 7 días
+    • Si un padre o una madre te hizo daño — 7 días
+
+    Un plan nunca se te escapa. Si dejas pasar una semana, te espera donde lo dejaste.
+
+    SINCERO CON LOS PASAJES DUROS
+
+    Estos libros no esquivan los textos difíciles: las frases sobre la vara en Proverbios, las hijas, los padres que hicieron daño y los lectores a quienes sus propios padres hirieron. Donde los estudiosos discrepan, las notas lo dicen.
+
+    PENSADA PARA LEER
+
+    • Funciona del todo sin conexión. Sin inicio de sesión, sin cuenta, sin publicidad.
+    • Tu progreso de lectura se queda en tu dispositivo.
+    • Claro y oscuro, y texto que puedes agrandar.
+    • Puede leerte cada día en voz alta, con una voz grabada o con la voz de tu dispositivo; las lecturas se pueden descargar para escuchar sin conexión.
+
+    Ambos devocionales se apoyan en estudios bíblicos publicados, y las notas nombran las obras que hay detrás de cada día. Las citas bíblicas de la edición española son traducciones propias del autor a partir del hebreo y del griego.
+
+    También en inglés, alemán, francés, portugués, turco, ruso y coreano. La app sigue el idioma de tu dispositivo.
+
+## Französisch (Frankreich) – fr-FR
+
+### App-Name [30]
+
+    Faithful parents
+
+### Kurzbeschreibung [80]
+
+    Deux livres de méditation de 31 jours sur les pères et mères de la Bible.
+
+### Vollständige Beschreibung [4000]
+
+    Deux livres de méditation de trente et un jours dans une seule app : Comme un père, sur les pères de la Bible, et Comme une mère console, sur ses mères. Lis l’un, lis l’autre, ou lis-les côte à côte.
+
+    Les parents de la Bible ne forment pas une galerie de héros. Abraham lève le couteau sur son fils. Éli ne retient pas les siens. David pleure trop tard. Sara pousse une servante dans le désert ; Rébecca trompe son mari ; Rachel et Léa mènent leur rivalité à travers les noms de leurs enfants. À leurs côtés se tiennent Anne, qui a prié ; Ritspa, qui a veillé ses fils morts pendant des mois ; Yokèbèd, qui a fabriqué une petite arche ; Job, qui a prié pour des enfants qu’il ne maîtrisait pas ; Manoach, qui a demandé comment faire ; et le père de Luc 15, qui a couru.
+
+    Chaque jour apporte :
+
+    • une courte lecture biblique et un verset clé
+    • un mot de l’hébreu ou du grec, avec son sens
+    • une page en langage clair sur un père ou une mère
+    • deux questions pour réfléchir
+    • une prière et une chose à faire aujourd’hui
+    • des notes et des sources, si tu veux vérifier le terrain sous un jour
+
+    SEPT PLANS DE LECTURE
+
+    • Côte à côte — les deux livres ensemble, 31 jours
+    • Comme un père — 31 jours
+    • Comme une mère console — 31 jours
+    • Enseigner tes enfants — 8 jours
+    • Quand les parents se trompent — 8 jours
+    • Deuil et perte — 7 jours
+    • Si un parent t’a fait du mal — 7 jours
+
+    Un plan ne te file jamais entre les doigts. Si tu laisses passer une semaine, il t’attend là où tu t’es arrêté.
+
+    HONNÊTE SUR LES PASSAGES DIFFICILES
+
+    Ces livres n’évitent pas les textes que l’on trouve difficiles : les sentences sur la verge dans les Proverbes, les filles, les pères qui ont fait du mal, et les lecteurs que leurs propres parents ont blessés. Là où les spécialistes ne sont pas d’accord, les notes le disent.
+
+    CONÇUE POUR LIRE
+
+    • Fonctionne entièrement hors connexion. Aucune connexion, aucun compte, aucune publicité.
+    • Ta progression reste sur ton appareil.
+    • Clair et sombre, et un texte que tu peux agrandir.
+    • Peut te lire chaque jour à voix haute, avec une voix enregistrée ou celle de ton appareil ; les lectures se téléchargent pour écouter hors connexion.
+
+    Les deux livres s’appuient sur des études bibliques publiées, et les notes nomment les ouvrages derrière chaque jour. Les citations bibliques de l’édition française sont des traductions personnelles de l’auteur à partir de l’hébreu et du grec.
+
+    Aussi en anglais, allemand, espagnol, portugais, turc, russe et coréen. L’app suit la langue de ton appareil.
+
+## Portugiesisch (Brasilien) – pt-BR
+
+### App-Name [30]
+
+    Faithful parents
+
+### Kurzbeschreibung [80]
+
+    Dois devocionais de 31 dias sobre os pais e as mães da Bíblia.
+
+### Vollständige Beschreibung [4000]
+
+    Dois devocionais de trinta e um dias em um só app: Como um pai, sobre os pais da Bíblia, e Como uma mãe consola, sobre as mães. Leia um, leia o outro, ou leia os dois lado a lado.
+
+    Os pais da Bíblia não são uma galeria de heróis. Abraão levanta a faca sobre o filho. Eli não contém os seus. Davi chora tarde demais. Sara empurra uma escrava para o deserto; Rebeca engana o marido; Raquel e Léia travam a rivalidade pelos nomes dos filhos. Ao lado deles estão Ana, que orou; Rispa, que guardou por meses os filhos mortos; Joquebede, que fez uma pequena arca; Jó, que orou por filhos que não podia controlar; Manoá, que perguntou como; e o pai de Lucas 15, que correu.
+
+    Cada dia traz:
+
+    • uma leitura bíblica curta e um versículo-chave
+    • uma palavra do hebraico ou do grego, com o seu sentido
+    • uma página em linguagem simples sobre um pai ou uma mãe
+    • duas perguntas para pensar
+    • uma oração e uma coisa para fazer hoje
+    • notas e fontes, se você quiser conferir o chão debaixo de um dia
+
+    SETE PLANOS DE LEITURA
+
+    • Lado a lado — os dois livros juntos, 31 dias
+    • Como um pai — 31 dias
+    • Como uma mãe consola — 31 dias
+    • Ensinar seus filhos — 8 dias
+    • Quando os pais erram — 8 dias
+    • Luto e perda — 7 dias
+    • Se um pai ou uma mãe feriu você — 7 dias
+
+    Um plano nunca foge de você. Se passar uma semana, ele espera onde você parou.
+
+    HONESTO COM AS PARTES DIFÍCEIS
+
+    Estes livros não pulam os textos que as pessoas acham difíceis: os ditos sobre a vara em Provérbios, as filhas, os pais que causaram dano e os leitores que foram feridos pelos próprios pais. Onde os estudiosos divergem, as notas dizem.
+
+    FEITO PARA LER
+
+    • Funciona totalmente offline. Sem login, sem conta, sem publicidade.
+    • Seu progresso de leitura fica no seu aparelho.
+    • Claro e escuro, e texto que você pode aumentar.
+    • Pode ler cada dia em voz alta, com uma voz gravada ou a voz do seu aparelho; as leituras podem ser baixadas para ouvir offline.
+
+    Os dois devocionais se apoiam em estudos bíblicos publicados, e as notas citam as obras por trás de cada dia. As citações bíblicas da edição em português são traduções próprias do autor a partir do hebraico e do grego.
+
+    Também em inglês, alemão, espanhol, francês, turco, russo e coreano. O app segue o idioma do seu aparelho.
+
+## Türkisch – tr-TR
+
+### App-Name [30]
+
+    Faithful parents
+
+### Kurzbeschreibung [80]
+
+    Kutsal Kitap’ın babaları ve anneleri üzerine 31 günlük iki kitap.
+
+### Vollständige Beschreibung [4000]
+
+    Tek uygulamada otuz bir günlük iki kitap: Kutsal Kitap’ın babalarını anlatan Bir Baba Gibi ve annelerini anlatan Bir Anne Avuttuğu Gibi. Birini oku, ötekini oku ya da ikisini yan yana oku.
+
+    Kutsal Kitap’ın ebeveynleri bir kahramanlar galerisi değildir. İbrahim oğlunun üzerine bıçağı kaldırır. Eli oğullarını engellemez. Davut çok geç ağlar. Sara bir cariyeyi çöle sürer; Rebeka kocasını aldatır; Rahel ile Lea çocuklarının adları üzerinden çekişir. Yanlarında dua eden Hanna; ölü oğullarını aylarca bekleyen Rispa; küçük bir sepet yapan Yokebed; denetleyemediği çocukları için dua eden Eyüp; “nasıl” diye soran Manoah; ve Luka 15’teki, koşan baba durur.
+
+    Her gün şunları getirir:
+
+    • kısa bir Kutsal Kitap okuması ve bir anahtar ayet
+    • İbranice ya da Yunancadan bir sözcük ve anlamı
+    • bir baba ya da bir anne üzerine sade bir sayfa
+    • düşünmek için iki soru
+    • bir dua ve bugün yapılacak bir şey
+    • bir günün dayandığı zemini denetlemek istersen notlar ve kaynaklar
+
+    YEDİ OKUMA PLANI
+
+    • Yan yana — iki kitap birlikte, 31 gün
+    • Bir Baba Gibi — 31 gün
+    • Bir Anne Avuttuğu Gibi — 31 gün
+    • Çocuklarına öğretmek — 8 gün
+    • Anne babalar hata yaptığında — 8 gün
+    • Yas ve kayıp — 7 gün
+    • Bir ebeveyn seni incittiyse — 7 gün
+
+    Bir plan senden hiç kaçmaz. Bir hafta kaçırırsan, kaldığın yerde bekler.
+
+    ZOR YERLERDE DÜRÜST
+
+    Bu kitaplar insanların zor bulduğu metinleri atlamaz: Süleyman’ın Meselleri’ndeki değnek sözleri, kızlar, zarar veren babalar ve kendi ebeveynleri tarafından incitilmiş okurlar. Bilginlerin ayrıştığı yerde notlar bunu söyler.
+
+    OKUMAK İÇİN YAPILDI
+
+    • Tamamen çevrimdışı çalışır. Giriş yok, hesap yok, reklam yok.
+    • Okuma ilerlemen cihazında kalır.
+    • Açık ve koyu tema, büyütebileceğin metin.
+    • Her günü kayıtlı bir sesle ya da cihazının sesiyle sesli okuyabilir; okumalar çevrimdışı dinlemek için indirilebilir.
+
+    İki kitap da yayımlanmış Kutsal Kitap araştırmalarına dayanır; notlar her günün arkasındaki eserleri adıyla anar. Türkçe baskıdaki Kutsal Kitap alıntıları, yazarın İbranice ve Yunancadan kendi çevirileridir.
+
+    İngilizce, Almanca, İspanyolca, Fransızca, Portekizce, Rusça ve Korece de var. Uygulama cihazının dilini izler.
+
+## Russisch – ru-RU
+
+### App-Name [30]
+
+    Faithful parents
+
+### Kurzbeschreibung [80]
+
+    Две книги на 31 день об отцах и матерях Библии, с планами чтения.
+
+### Vollständige Beschreibung [4000]
+
+    Две книги на тридцать один день в одном приложении: «Как отец» — об отцах Библии и «Как утешает мать» — о её матерях. Читайте одну, читайте другую или обе рядом.
+
+    Родители Библии — не галерея героев. Авраам поднимает нож над сыном. Илий не останавливает своих сыновей. Давид плачет слишком поздно. Сарра изгоняет рабыню в пустыню; Ревекка обманывает мужа; Рахиль и Лия ведут своё соперничество через имена детей. Рядом с ними — Анна, которая молилась; Рицпа, которая месяцами охраняла погибших сыновей; Иохевед, которая сделала маленький ковчег; Иов, который молился о детях, над которыми был не властен; Маной, который спросил, как; и отец из Евангелия от Луки, глава 15, который побежал навстречу.
+
+    В каждом дне:
+
+    • короткий библейский отрывок и ключевой стих
+    • слово из древнееврейского или греческого и его значение
+    • страница простым языком об одном отце или одной матери
+    • два вопроса для размышления
+    • молитва и одно дело на сегодня
+    • примечания и источники — если хотите проверить почву под ногами в этом дне
+
+    СЕМЬ ПЛАНОВ ЧТЕНИЯ
+
+    • Рядом — обе книги вместе, 31 день
+    • Как отец — 31 день
+    • Как утешает мать — 31 день
+    • Учить своих детей — 8 дней
+    • Когда родители ошибаются — 8 дней
+    • Горе и утрата — 7 дней
+    • Если родитель причинил тебе боль — 7 дней
+
+    План никогда не убегает от вас. Пропустите неделю — он ждёт там, где вы остановились.
+
+    ЧЕСТНО О ТРУДНОМ
+
+    Эти книги не обходят места, которые считают трудными: изречения о розге в Притчах, дочерей, отцов, причинивших вред, и читателей, которых ранили собственные родители. Где учёные расходятся, примечания говорят об этом.
+
+    СОЗДАНО ДЛЯ ЧТЕНИЯ
+
+    • Работает полностью без сети. Без входа, без аккаунта, без рекламы.
+    • Твой прогресс чтения остаётся на вашем устройстве.
+    • Светлая и тёмная темы, текст можно увеличить.
+    • Каждый день можно прослушать в записи или голосом вашего устройства; записи можно скачать для прослушивания без сети.
+
+    Обе книги опираются на опубликованные библейские исследования, а примечания называют труды, стоящие за каждым днём. Библейские цитаты русского издания — собственные переводы автора с древнееврейского и греческого.
+
+    Есть также на английском, немецком, испанском, французском, португальском, турецком и корейском. Приложение следует языку вашего устройства.
+
+## Koreanisch – ko-KR
+
+### App-Name [30]
+
+    Faithful parents
+
+### Kurzbeschreibung [80]
+
+    성경 속 아버지와 어머니를 다룬 31일 묵상집 두 권, 읽기 계획 포함.
+
+### Vollständige Beschreibung [4000]
+
+    서른하루씩의 묵상집 두 권을 한 앱에 담았습니다. 성경 속 아버지들을 다룬 「아버지처럼」과 어머니들을 다룬 「어머니가 위로하듯」입니다. 한 권씩 읽어도 좋고, 나란히 읽어도 좋습니다.
+
+    성경 속 부모는 영웅들의 전시관이 아닙니다. 아브라함은 아들 위로 칼을 듭니다. 엘리는 자기 아들들을 막지 못합니다. 다윗은 너무 늦게 웁니다. 사라는 여종을 광야로 내몰고, 리브가는 남편을 속이며, 라헬과 레아는 자녀의 이름으로 다툼을 이어 갑니다. 그 곁에는 기도한 한나, 죽은 아들들을 몇 달 동안 지킨 리스바, 작은 상자를 만든 요게벳, 마음대로 할 수 없는 자녀들을 위해 기도한 욥, “어떻게 해야 합니까” 하고 물은 마노아, 그리고 달려간 누가복음 15장의 아버지가 서 있습니다.
+
+    날마다 이런 내용이 있습니다.
+
+    • 짧은 성경 본문과 핵심 구절
+    • 히브리어나 헬라어 단어 하나와 그 뜻
+    • 한 아버지나 한 어머니에 관한 쉬운 글 한 쪽
+    • 생각해 볼 질문 두 가지
+    • 기도와 오늘 해 볼 한 가지
+    • 그날의 바탕을 확인하고 싶을 때 볼 수 있는 주석과 출처
+
+    일곱 가지 읽기 계획
+
+    • 나란히 — 두 권을 함께, 31일
+    • 아버지처럼 — 31일
+    • 어머니가 위로하듯 — 31일
+    • 자녀를 가르치기 — 8일
+    • 부모가 잘못할 때 — 8일
+    • 슬픔과 상실 — 7일
+    • 부모에게 상처받았다면 — 7일
+
+    계획은 결코 당신을 앞서 달아나지 않습니다. 한 주를 건너뛰어도 멈춘 자리에서 기다립니다.
+
+    어려운 대목도 정직하게
+
+    이 책들은 사람들이 어렵게 여기는 본문을 건너뛰지 않습니다. 잠언의 매 이야기, 딸들, 해를 끼친 아버지들, 그리고 자기 부모에게 상처받은 독자들을 다룹니다. 학자들의 견해가 갈리는 곳은 주석이 그렇게 밝힙니다.
+
+    읽기 위해 만들었습니다
+
+    • 인터넷 없이도 완전히 작동합니다. 로그인도 계정도 광고도 없습니다.
+    • 읽기 진행 상황은 기기에 남습니다.
+    • 밝은 화면과 어두운 화면, 키울 수 있는 글자.
+    • 날마다의 글을 녹음된 음성이나 기기의 음성으로 들을 수 있고, 내려받아 오프라인으로도 들을 수 있습니다.
+
+    두 책 모두 출판된 성경 연구에 기대고 있으며, 주석은 날마다의 근거 저작을 밝힙니다. 한국어판의 성경 인용은 저자가 히브리어와 헬라어에서 직접 옮긴 번역입니다.
+
+    영어, 독일어, 스페인어, 프랑스어, 포르투갈어, 터키어, 러시아어로도 볼 수 있습니다. 앱은 기기의 언어를 따릅니다.
+
+## So kommt eine Sprache dazu (Deutsch und die sechs weiteren)
 
 1. *Wachstum → Store-Präsenz → Hauptversion des Store-Eintrags*.
 2. Oben **Übersetzungen verwalten → Eigene Übersetzungen hinzufügen** (nicht
@@ -425,10 +743,9 @@ Was dabei zu wissen ist:
 - de-DE wird allen gezeigt, deren Play Store auf Deutsch steht — auch in Österreich und
   der Schweiz. Eigene Einträge für de-AT oder de-CH sind nicht nötig.
 - Fehlt ein Feld in der deutschen Übersetzung, zeigt Play dort den englischen Text.
-- Play bietet an, fehlende Sprachen **automatisch** zu übersetzen. Für Deutsch nicht
-  nötig; für andere Sprachen besser nicht einschalten, solange die App selbst nur
-  Englisch und Deutsch spricht — sonst verspricht der Eintrag eine Sprache, die die App
-  nicht hat.
+- Play bietet an, fehlende Sprachen **automatisch** zu übersetzen. Für die acht
+  Sprachen der App nicht nötig; für weitere Sprachen besser nicht einschalten — sonst
+  verspricht der Eintrag eine Sprache, die die App nicht hat.
 - Die Datenschutz-URL gilt für alle Sprachen gemeinsam (Teil 3).
 
 ## Versionshinweise („Was ist neu") [500, je Sprache]
@@ -441,6 +758,9 @@ Werden beim Anlegen des Releases eingetragen, nicht im Store-Eintrag. Format im 
     <de-DE>
     Erste Version.
     </de-DE>
+    (die übrigen sechs Sprachen: <es-ES> First release → "Primera versión.", <fr-FR>
+    "Première version.", <pt-BR> "Primeira versão.", <tr-TR> "İlk sürüm.", <ru-RU>
+    "Первая версия.", <ko-KR> "첫 번째 버전.")
 
 ---
 
