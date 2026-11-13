@@ -6,9 +6,9 @@ App-Store-Eintrag steht, steht er hier trotzdem vollständig — Play hat andere
 (z. B. Kurzbeschreibung 80 statt Werbetext 170), und so lässt sich jedes Feld direkt
 kopieren.
 
-Die App ist dieselbe wie auf dem iPhone: **acht Sprachen** — Englisch (*Like a Father* /
+Die App ist dieselbe wie auf dem iPhone: **zehn Sprachen** — Englisch (*Like a Father* /
 *As a Mother Comforts*), Deutsch (*Wie ein Vater* / *Wie eine Mutter tröstet*), Spanisch,
-Französisch, Portugiesisch, Türkisch, Russisch, Koreanisch. Sie folgt der
+Französisch, Portugiesisch, Türkisch, Russisch, Koreanisch, Vietnamesisch, Indonesisch. Sie folgt der
 Sprache des Geräts und lässt sich unter *About/Über* umstellen. Standardsprache des
 Eintrags: **Englisch (Vereinigtes Königreich) – en-GB**; Deutsch und die sechs weiteren Sprachen kommen als
 Übersetzungen dazu (Teil 4).
@@ -726,6 +726,110 @@ leer lassen (Play zeigt dann die englischen).
     두 책 모두 출판된 성경 연구에 기대고 있으며, 주석은 날마다의 근거 저작을 밝힙니다. 한국어판의 성경 인용은 저자가 히브리어와 헬라어에서 직접 옮긴 번역입니다.
 
     영어, 독일어, 스페인어, 프랑스어, 포르투갈어, 터키어, 러시아어로도 볼 수 있습니다. 앱은 기기의 언어를 따릅니다.
+
+## Vietnamesisch – vi
+
+### App-Name [30]
+
+    Faithful parents
+
+### Kurzbeschreibung [80]
+
+    Suy niệm 31 ngày về cha mẹ trong Kinh Thánh, có kế hoạch đọc và bản đọc thu âm.
+
+### Vollständige Beschreibung [4000]
+
+    Hai cuốn sách suy niệm ba mươi mốt ngày trong một ứng dụng: Như một người cha, về những người cha trong Kinh Thánh, và Như người mẹ ủi an, về những người mẹ. Đọc cuốn này, đọc cuốn kia, hoặc đọc song hành cả hai.
+
+    Những người cha trong Kinh Thánh không phải là một dãy anh hùng. Áp-ra-ham giơ dao lên con mình. Ê-li không kiềm chế được các con. Đa-vít khóc quá muộn. Sa-ra đẩy một nữ tỳ ra sa mạc; Rê-bê-ca lừa chồng; Ra-chên và Lê-a tranh đua nhau qua tên các con. Bên cạnh họ là An-ne, người đã cầu nguyện; Rít-pa, người suốt nhiều tháng canh giữ các con đã chết; Giô-kê-bết, người đã làm một chiếc giỏ nhỏ; Gióp, người cầu nguyện cho những đứa con ông không thể kiểm soát; Ma-nô-a, người đã hỏi phải làm thế nào; và người cha trong Lu-ca 15, người đã chạy ra đón con.
+
+    Mỗi ngày gồm có:
+
+    • một bài đọc Kinh Thánh ngắn và một câu then chốt
+    • một từ tiếng Hê-bơ-rơ hoặc Hy Lạp, cùng ý nghĩa của nó
+    • một trang viết bằng lời giản dị về một người cha hoặc một người mẹ
+    • hai câu hỏi để suy ngẫm
+    • một lời cầu nguyện và một việc để làm hôm nay
+    • ghi chú và nguồn tham khảo, nếu bạn muốn xem nền móng của một ngày
+
+    BẢY KẾ HOẠCH ĐỌC
+
+    • Song hành — hai cuốn sách cùng nhau, 31 ngày
+    • Như một người cha — 31 ngày
+    • Như người mẹ ủi an — 31 ngày
+    • Dạy dỗ con cái — 8 ngày
+    • Khi cha mẹ lầm lỗi — 8 ngày
+    • Đau buồn và mất mát — 7 ngày
+    • Nếu cha hoặc mẹ đã làm bạn tổn thương — 7 ngày
+
+    Kế hoạch không bao giờ bỏ rơi bạn. Nếu một tuần trôi qua, nó vẫn chờ ở chỗ bạn dừng lại.
+
+    THẲNG THẮN VỚI NHỮNG PHẦN KHÓ
+
+    Hai cuốn sách này không bỏ qua những đoạn mà người ta thấy khó: những câu nói về cây roi trong Châm Ngôn, các cô con gái, những người cha đã gây tổn hại, và những độc giả đã bị chính cha mẹ mình làm tổn thương. Ở chỗ các học giả bất đồng, phần ghi chú sẽ nói rõ.
+
+    LÀM RA ĐỂ ĐỌC
+
+    • Hoạt động hoàn toàn khi không có mạng. Không đăng nhập, không tài khoản, không quảng cáo.
+    • Tiến trình đọc của bạn nằm trên thiết bị của bạn.
+    • Nền sáng và tối, và chữ có thể phóng to.
+    • Có thể đọc thành tiếng từng ngày, bằng giọng thu âm sẵn hoặc giọng của thiết bị; các bản đọc có thể tải xuống để nghe khi không có mạng.
+
+    Hai cuốn sách suy niệm này dựa trên các nghiên cứu Kinh Thánh đã được công bố, và phần ghi chú nêu các công trình đứng sau từng ngày. Các đoạn trích Kinh Thánh trong bản tiếng Việt là bản dịch riêng của tác giả từ tiếng Hê-bơ-rơ và tiếng Hy Lạp.
+
+    Cũng có bằng tiếng Anh, tiếng Đức, tiếng Tây Ban Nha, tiếng Pháp, tiếng Bồ Đào Nha, tiếng Thổ Nhĩ Kỳ, tiếng Nga và tiếng Hàn. Ứng dụng theo ngôn ngữ của thiết bị bạn.
+
+## Indonesisch – id
+
+### App-Name [30]
+
+    Faithful parents
+
+### Kurzbeschreibung [80]
+
+    Dua buku renungan 31 hari tentang para bapa dan ibu dalam Alkitab.
+
+### Vollständige Beschreibung [4000]
+
+    Dua buku renungan tiga puluh satu hari dalam satu aplikasi: Seperti Seorang Bapa, tentang para bapa dalam Alkitab, dan Seperti Ibu yang Menghibur, tentang para ibu. Bacalah yang satu, bacalah yang lain, atau bacalah keduanya berdampingan.
+
+    Para orang tua dalam Alkitab bukanlah deretan pahlawan. Abraham mengangkat pisau atas anaknya. Eli tidak menahan anak-anaknya. Daud menangis terlambat. Sara mengusir seorang hamba perempuan ke padang gurun; Ribka menipu suaminya; Rahel dan Lea berseteru lewat nama anak-anak mereka. Di samping mereka ada Hana, yang berdoa; Rizpa, yang berbulan-bulan menjaga anak-anaknya yang telah mati; Yokhebed, yang membuat sebuah keranjang kecil; Ayub, yang mendoakan anak-anak yang tidak dapat ia kendalikan; Manoah, yang bertanya bagaimana; dan sang bapa dalam Lukas 15, yang berlari.
+
+    Setiap hari menghadirkan:
+
+    • satu bacaan Alkitab yang singkat dan satu ayat kunci
+    • satu kata dari bahasa Ibrani atau Yunani, beserta artinya
+    • satu halaman berbahasa sederhana tentang seorang bapa atau seorang ibu
+    • dua pertanyaan untuk direnungkan
+    • satu doa dan satu hal untuk dilakukan hari ini
+    • catatan dan sumber, jika Anda ingin memeriksa dasar dari sebuah hari
+
+    TUJUH RENCANA BACA
+
+    • Berdampingan — kedua buku bersama, 31 hari
+    • Seperti Seorang Bapa — 31 hari
+    • Seperti Ibu yang Menghibur — 31 hari
+    • Mengajar anak-anak Anda — 8 hari
+    • Ketika orang tua keliru — 8 hari
+    • Duka dan kehilangan — 7 hari
+    • Jika ayah atau ibu pernah melukai Anda — 7 hari
+
+    Sebuah rencana tidak pernah meninggalkan Anda. Jika seminggu terlewat, rencana itu menunggu di tempat Anda berhenti.
+
+    JUJUR TERHADAP BAGIAN YANG SULIT
+
+    Buku-buku ini tidak melewati teks-teks yang dianggap sulit: perkataan tentang tongkat dalam Amsal, para putri, orang tua yang menyebabkan luka, dan pembaca yang dilukai oleh orang tuanya sendiri. Di mana para ahli berbeda pendapat, catatan-catatan mengatakannya.
+
+    DIRANCANG UNTUK DIBACA
+
+    • Berfungsi sepenuhnya tanpa koneksi. Tanpa login, tanpa akun, tanpa iklan.
+    • Kemajuan membaca Anda tersimpan di perangkat Anda.
+    • Mode terang dan gelap, dan teks yang dapat diperbesar.
+    • Setiap hari dapat dibacakan dengan suara perangkat Anda.
+
+    Kedua buku renungan ini bertumpu pada kajian Alkitab yang telah diterbitkan, dan catatan-catatannya menyebut karya-karya di balik setiap hari. Kutipan Alkitab dalam edisi bahasa Indonesia adalah terjemahan sendiri penulis dari bahasa Ibrani dan Yunani.
+
+    Tersedia juga dalam bahasa Inggris, Jerman, Spanyol, Prancis, Portugis, Turki, Rusia, dan Korea. Aplikasi mengikuti bahasa perangkat Anda.
 
 ## So kommt eine Sprache dazu (Deutsch und die sechs weiteren)
 
